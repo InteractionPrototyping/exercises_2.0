@@ -1,6 +1,7 @@
 aside {
     width:20vw;
     margin-left:1vw;
+    margin-top:1vw;
 }
 
 .menu-list li ul {
@@ -19,5 +20,12 @@ aside {
     transition: max-height 0.2s ease-out;
     box-shadow:none!important;
     /*or better with shadow? */
+}
+
+#spiral {
+    height:95vh;
+    margin:auto;
+    margin-top:1vw;
+    display:block;
 }
 

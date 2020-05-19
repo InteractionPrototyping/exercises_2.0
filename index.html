@@ -9,113 +9,21 @@
     <script src="js/script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
+    <script src="js/include.js"></script>
 </head>
-<body>
-    <aside class="menu">
-        <p class="menu-label">
-            General
-        </p>
-        <ul class="menu-list">
-            <li><a class="is-active">Overview</a></li>
-            <li><a>Schedule</a></li>
-            <li><a>Grading and expectations</a></li>
-            <li><a>Ideas</a></li>
-            <li>
-                <a class="accordion">Set up</a>
-                <ul class="panel">
-                    <li><a>Introduction to GitHub</a></li>
-                    <li><a>Commands</a></li>
-                    <li><a>GitHub Client</a></li>
-                    <li><a>Development environment</a></li>
-                </ul>
-            </li>
-        </ul>
-        <p class="menu-label">
-            Theory
-        </p>
-        <ul class="menu-list">
-            <li>
-                <a class="accordion">Analysis</a>
-                <ul class="panel">
-                    <li><a>Introduction</a></li>
-                    <li><a>Research and interviews</a></li>
-                    <li><a>Goals and design principles</a></li>
-                    <li><a>Frameworks</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Design</a>
-                <ul class="panel">
-                    <li><a>Introduction</a></li>
-                    <li><a>First sketch</a></li>
-                    <li><a>From LoFi to HiFi</a></li>
-                    <li><a>Style a prototype</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Implementation</a>
-                <ul class="panel">
-                    <li><a>Introduction</a></li>
-                    <li><a>LoFi Paper Prototyping</a></li>
-                    <li><a>HiFi Prototyping</a></li>
-                    <li><a>LoFi Web App</a></li>
-                    <li><a>HiFi Web App</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Evaluation</a>
-                <ul class="panel">
-                    <li><a>Introduction</a></li>
-                    <li><a>Thinking Aloud</a></li>
-                    <li><a>Heuristic Evaluation</a></li>
-                    <li><a>Qualitative Evaluation</a></li>
-                    <li><a>Quantitative Evaluation</a></li>
-                </ul>
-            </li>
-        </ul>
-        <p class="menu-label">
-            Tasks
-        </p>
-        <ul class="menu-list">
-            <li><a>Milestone 1</a></li>
-            <li><a>Milestone 2</a></li>
-            <li><a>Milestone 3</a></li>
-            <li><a>Milestone 4</a></li>
-            <li><a>Final Evaluation</a></li>
-        </ul>
-    </aside>
+<body onload="accordion()">
+    <div class="columns">
+        <div class="column is-one-fifth ">
+            <div w3-include-html="pages/shared/sidebar.html"></div>
+        </div>
+        <div class="column">
+                <img id="spiral" src="img/orga-spiral.jpg">
+
+        </div>
+    </div>
 </body>
 </html>
 
 <script>
-    var acc = document.getElementsByClassName("accordion");
-    var acc2 = document.getElementsByClassName("active");
-    var i;
-    var j;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            if (this.className==="accordion") {
-                removeActive();
-            }
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-        });
-    }
-
-    function removeActive () {
-        for (j = 0; j < acc2.length; j++) {
-            var panel2 = acc2[j].nextElementSibling;
-            if(panel2.style.maxHeight) {
-                panel2.style.maxHeight = null;
-                acc2[j].classList.toggle("active");
-            }
-        }
-    }
-
+    includeHTML();
 </script>
