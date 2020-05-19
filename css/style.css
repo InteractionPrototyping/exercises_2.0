@@ -3,8 +3,8 @@ aside {
     margin-left:1vw;
 }
 
-ul {
-    margin-bottom:0!important;
+.menu-list li ul {
+    margin:0!important;
 }
 
 .accordion {

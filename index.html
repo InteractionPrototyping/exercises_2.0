@@ -77,53 +77,11 @@
             Tasks
         </p>
         <ul class="menu-list">
-            <li>
-                <a class="accordion">Milestone 1</a>
-                <ul class="panel">
-                    <li><a>T1: Understanding Users</a></li>
-                    <li><a>T2: Personas, user goals, scenarios</a></li>
-                    <li><a>T3: Paper Prototype</a></li>
-                    <li><a>T4: Thinking Aloud</a></li>
-                    <li><a>T5: Presentation M1</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Milestone 2</a>
-                <ul class="panel">
-                    <li><a>T6: Use goals, usability goals and principles</a></li>
-                    <li><a>T7: Apply design</a></li>
-                    <li><a>T8: POP</a></li>
-                    <li><a>T9: Heuristic Evaluation</a></li>
-                    <li><a>T10: Presentation M2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Milestone 3</a>
-                <ul class="panel">
-                    <li><a>T11: Design Framework</a></li>
-                    <li><a>T12: Style prototype</a></li>
-                    <li><a>T13: First Web App</a></li>
-                    <li><a>T14: Qualitative Evaluation</a></li>
-                    <li><a>T15: Presentation M3</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Milestone 4</a>
-                <ul class="panel">
-                    <li><a>T16: Reflection and aiming forward</a></li>
-                    <li><a>T17: Improvement interaction</a></li>
-                    <li><a>T18: HiFi Web App</a></li>
-                    <li><a>T19: Experimental requirements</a></li>
-                    <li><a>T20: Presentation M4</a></li>
-                </ul>
-            </li>
-            <li>
-                <a class="accordion">Final Evaluation</a>
-                <ul class="panel">
-                    <li><a>T21: Final Evaluation</a></li>
-                    <li><a>T22: Final Presentation</a></li>
-                </ul>
-            </li>
+            <li><a>Milestone 1</a></li>
+            <li><a>Milestone 2</a></li>
+            <li><a>Milestone 3</a></li>
+            <li><a>Milestone 4</a></li>
+            <li><a>Final Evaluation</a></li>
         </ul>
     </aside>
 </body>
@@ -137,7 +95,9 @@
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            removeActive();
+            if (this.className==="accordion") {
+                removeActive();
+            }
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
