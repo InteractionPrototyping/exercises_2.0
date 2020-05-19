@@ -3,6 +3,10 @@ aside {
     margin-left:1vw;
 }
 
+ul {
+    margin-bottom:0!important;
+}
+
 .accordion {
     cursor: pointer;
     transition: 0.4s;
@@ -13,4 +17,7 @@ aside {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    box-shadow:none!important;
+    /*or better with shadow? */
 }
+

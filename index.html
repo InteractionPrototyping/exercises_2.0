@@ -6,6 +6,7 @@
     <title>IPP</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <script src="js/script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 </head>
@@ -37,38 +38,38 @@
                 <a class="accordion">Analysis</a>
                 <ul class="panel">
                     <li><a>Introduction</a></li>
-                    <li><a>Methods I: Research and interviews</a></li>
-                    <li><a>Methods II: Goals and design principles</a></li>
-                    <li><a>Methods III: Frameworks</a></li>
+                    <li><a>Research and interviews</a></li>
+                    <li><a>Goals and design principles</a></li>
+                    <li><a>Frameworks</a></li>
                 </ul>
             </li>
             <li>
                 <a class="accordion">Design</a>
                 <ul class="panel">
                     <li><a>Introduction</a></li>
-                    <li><a>Methods I: First sketch</a></li>
-                    <li><a>Methods II: From LoFi to HiFi</a></li>
-                    <li><a>Methods III: Style a prototype</a></li>
+                    <li><a>First sketch</a></li>
+                    <li><a>From LoFi to HiFi</a></li>
+                    <li><a>Style a prototype</a></li>
                 </ul>
             </li>
             <li>
                 <a class="accordion">Implementation</a>
                 <ul class="panel">
                     <li><a>Introduction</a></li>
-                    <li><a>Methods I: LoFi Paper Prototyping</a></li>
-                    <li><a>Methods II: HiFi Prototyping</a></li>
-                    <li><a>Methods III: Web App</a></li>
-                    <li><a>Methods IV: HiFi Web App</a></li>
+                    <li><a>LoFi Paper Prototyping</a></li>
+                    <li><a>HiFi Prototyping</a></li>
+                    <li><a>LoFi Web App</a></li>
+                    <li><a>HiFi Web App</a></li>
                 </ul>
             </li>
             <li>
                 <a class="accordion">Evaluation</a>
                 <ul class="panel">
                     <li><a>Introduction</a></li>
-                    <li><a>Methods I: Thinking Aloud</a></li>
-                    <li><a>Methods II: Heuristic Evaluation</a></li>
-                    <li><a>Methods III: Qualitative Evaluation</a></li>
-                    <li><a>Methods IV: Quantitative Evaluation</a></li>
+                    <li><a>Thinking Aloud</a></li>
+                    <li><a>Heuristic Evaluation</a></li>
+                    <li><a>Qualitative Evaluation</a></li>
+                    <li><a>Quantitative Evaluation</a></li>
                 </ul>
             </li>
         </ul>
@@ -130,10 +131,13 @@
 
 <script>
     var acc = document.getElementsByClassName("accordion");
+    var acc2 = document.getElementsByClassName("active");
     var i;
+    var j;
 
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
+            removeActive();
             this.classList.toggle("active");
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
@@ -143,4 +147,15 @@
             }
         });
     }
+
+    function removeActive () {
+        for (j = 0; j < acc2.length; j++) {
+            var panel2 = acc2[j].nextElementSibling;
+            if(panel2.style.maxHeight) {
+                panel2.style.maxHeight = null;
+                acc2[j].classList.toggle("active");
+            }
+        }
+    }
+
 </script>
