@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <div w3-include-html="../shared/header.html"></div>
+</head>
+
+<body onload="accordion()">
+<div class="columns is-fullheight">
+    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+        <div w3-include-html="../shared/sidebar.html">
+        </div>
+    </div>
+    <div class="column" id="content">
+        <section>
+            <h1 class="title">Reflections</h1>
+            <img class="video" src="../../img/video.png">
+        </section>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    includeHTML();
+</script>

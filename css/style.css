@@ -1,11 +1,17 @@
+body {
+
+}
 
 section {
-    margin-bottom:2%;
+    margin-bottom:5%;
 }
 
 aside {
     height: 100vh;
     padding:0 1vw;
+    position:fixed;
+    margin-top:20px;
+    /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
 .menu-list li ul {
@@ -28,8 +34,8 @@ aside {
 .video {
     display:block;
     width:90vw;
-    margin:auto;
-
+    max-width: 800px ;
+    margin: auto;
 }
 
 .box_title{
@@ -78,6 +84,11 @@ aside {
     color:black;
 }
 
+.bullets {
+    margin-left:15px;
+    list-style-type: circle;
+}
+
 #spiral {
     height:95vh;
     margin:auto;
@@ -86,11 +97,8 @@ aside {
 }
 
 #content {
-    padding:7vh 5vw 0 5vw!important;
+    margin-top:20px;
 }
 
-#aside {
-    padding-top:7vh;
-}
 
 
