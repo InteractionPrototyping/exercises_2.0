@@ -1,3 +1,13 @@
+:root {
+    --bg-color: #434343;
+    --text-color-light: #ffffff;
+    --text-color-grey: #b7b7b7;
+    --primary-color: #fba97a;
+    --secondary-color-blue: #53acff;
+    --secondary-color-purple: #8e7cc3;
+    --secondary-color-green: #b6d7a8;
+}
+
 body {
 
 }
@@ -10,7 +20,7 @@ aside {
     height: 100vh;
     padding:0 1vw;
     position:fixed;
-    margin-top:20px;
+    padding-top:20px;
     /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
@@ -36,21 +46,40 @@ aside {
     width:90vw;
     max-width: 800px ;
     margin: auto;
+    padding-bottom: 20px;
 }
 
 .box_title{
     font-weight: bold;
     padding-bottom:1vh;
-    color:#C28400!important;
+    color:#0067C7!important;
 }
 
 .box_reading {
     box-shadow: none!important;
-    background-color: #FFFDFA !important;
-    border-left: #C28400 3px solid;
+    background-color: #F5F5F5 !important;
+    border-left: #0067C7 3px solid;
     display:block;
     padding: 0.5rem 1rem;
     margin-top:1rem;
+}
+
+.tasks_title {
+    color:#C28400!important;
+}
+
+.tasks_text {
+    background-color: #FFFDFA !important;
+    border-left: #C28400 3px solid;
+}
+
+.templates_title {
+    color:#7D69BA!important;
+}
+
+.templates_text {
+    background-color: #F5F4FA !important;
+    border-left: #7D69BA 3px solid;
 }
 
 .quote{
@@ -98,6 +127,8 @@ aside {
 
 #content {
     margin-top:20px;
+    margin-left:20px;
+    margin-right:40px;
 }
 
 
