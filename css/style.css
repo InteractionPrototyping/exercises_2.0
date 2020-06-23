@@ -24,6 +24,10 @@ aside {
     /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
+.custom-list {
+    margin-left:20px;
+}
+
 .menu-list li ul {
     margin:0!important;
 }

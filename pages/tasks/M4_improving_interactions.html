@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <div w3-include-html="../shared/header.html"></div>
+</head>
+
+<body onload="accordion()">
+<div class="columns is-fullheight">
+    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+        <div w3-include-html="../shared/sidebar.html">
+        </div>
+    </div>
+    <div class="column" id="content">
+        <section>
+            <h1 class="title">Improving interactions</h1>
+            <img class="video" src="../../img/video.png">
+
+            <div>
+                <p>Transfer Coopers interaction framework. Apply your definitions (including patterns/guidelines) above to the web technologies HTML5/CSS3/JS:</p>
+                <ol class="custom-list">
+                    <li><b>First,</b> model the prototypical structure/hierarchy (in HTML), the data elements (as JS objects), the functional elements and input methods (e.g. HTML5 forms, jQuery UI components, ...).</li>
+                    <li><b>Second,</b> model a rough prototypical sketch of key path scenarios (e.g. navigating the hierarchy) using jQuery.</li>
+                    <li><b>Third,</b> design the visual appearance of your application in reusable and hierarchical CSS3 classes.</li>
+                </ol>
+            </div>
+
+        </section>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    includeHTML();
+</script>
