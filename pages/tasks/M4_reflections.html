@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
     <div w3-include-html="../shared/header.html"></div>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+    <div id="aside" class="column is-one-quarter  is-sidebar-menu is-hidden-mobile">
         <div w3-include-html="../shared/sidebar.html">
         </div>
     </div>
     <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Reflections</h1>
             <img class="video" src="../../img/video.png">
@@ -20,7 +20,7 @@
             <p>Analyse the results of the qualitative evaluation in iteration 3, work out positive points to keep working on and the negative points to be improved. Compare those Todos with the planned goal of your application, decide what are exactly to be implemented/improved.</p>
             </div>
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title">Task 16</div>
+                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 16</div>
                 <p>Document your decision process briefly on not more than one page in <code>iteration-4/analysis</code> in the GitHub <code>master</code> branch.</p>
             </div>
         </section>
@@ -28,7 +28,7 @@
 </div>
 </body>
 </html>
-
+<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

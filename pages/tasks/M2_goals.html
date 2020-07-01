@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
     <div w3-include-html="../shared/header.html"></div>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+    <div id="aside" class="column is-one-quarter is-sidebar-menu is-hidden-mobile">
         <div w3-include-html="../shared/sidebar.html">
         </div>
     </div>
     <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Goals and design principles</h1>
             <img class="video" src="../../img/video.png">
@@ -26,15 +26,15 @@
             </div>
 
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://proquestcombo.safaribooksonline.com/0596009828">Chapter 2: Modeling Requirements: Use Cases</a> by Russ Miles & Kim Hamilton, book chapter in Learning UML 2.0</p>
             </div>
             <div class="box_reading templates_text">
-                <div class="box_title templates_title">Templates</div>
+                <div class="box_title templates_title"><i class="fa fa-file"></i>Templates</div>
                 <p><a href="https://creately.com/diagram-type/use-case">UML diagrams</a> by Creately</p>
             </div>
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title">Task 6</div>
+                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 6.1.</div>
                 <p>Document (e.g. in .ppt) your UML use-cases in a folder <code>iteration-2/Analysis</code> in the GitHub <code>master</code> branch.</p>
             </div>
         </section>
@@ -45,7 +45,7 @@
             </div>
 
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://proquest.safaribooksonline.com/9780470084113">Chapter 6: The Foundations of Design: Scenarios and Requirements</a> by Cooper (2007), book chapter in About Face 3</p>
             </div>
         </section>
@@ -56,14 +56,14 @@
                 <p>It is suggested to orientate yourself to the Nielsen's 10 Usability heuristics, and read other rules as information.</p>
             </div>
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://proquest.tech.safaribooksonline.de/9780125184069">Chapter 5: Usability Heuristics</a> by Nielsen (1993), book chapter in Usability Engineering</p>
                 <p><a href="https://proquest.safaribooksonline.com/9780470084113">Chapter 8: Synthesizing Good Design: Principles and Patterns</a> by Cooper (2007), book chapter in About Face 3</p>
                 <p><a href="https://www.cs.umd.edu/users/ben/goldenrules.html">8 golden rules of Interface Design</a> by Shneiderman, online article</p>
                 <p><a href="https://asktog.com/atc/principles-of-interaction-design/">First Principles of Interaction Design</a> by Tognazzini, online article</p>
             </div>
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title">Task</div>
+                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 6.2.</div>
                 <p>Document (e.g. .ppt) your (new) requirements, usability goals and exemplify how the principles were accounted for and improvements needed in a folder <code>iteration-2/analysis</code> in the GitHub <code>master</code> branch. Discuss them with your tutors.</p>
             </div>
         </section>
@@ -71,7 +71,7 @@
 </div>
 </body>
 </html>
-
+<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

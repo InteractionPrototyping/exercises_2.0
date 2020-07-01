@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
     <div w3-include-html="../shared/header.html"></div>
 </head>
 
 <body onload="accordion()">
 <div w3-include-html="../shared/sidebar.html"></div>
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+    <div id="aside" class="column is-one-quarter  is-sidebar-menu is-hidden-mobile">
     </div>
     <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Design</h1>
             <h2 class="subtitle">Visualize your idea and your thinking</h2>
             <img class="video" src="../../img/video.png" alt="interaction design video">
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://www.usability.gov/what-and-why/interaction-design.html">Interaction Design Basics</a> by usability.gov, online article</p>
                 <p><a href="https://www.invisionapp.com/inside-design/amazing-interaction-design/">10 amazing examples of interaction design</a> by Emily Esposito, online article</p>
             </div>
@@ -32,7 +32,7 @@
             <h1 class="title is-4">User Experience</h1>
             <img class="video" src="../../img/video.png">
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://www.creativebloq.com/ux/10-steps-engaging-user-experience-3156607">The 20 UX tips you need to know</a> by Jamie Shanks, online article</p>
             </div>
         </section>
@@ -45,7 +45,7 @@
 </div>
 </body>
 </html>
-
+<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

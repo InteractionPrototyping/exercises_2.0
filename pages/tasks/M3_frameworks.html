@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
     <div w3-include-html="../shared/header.html"></div>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+    <div id="aside" class="column is-one-quarter is-sidebar-menu is-hidden-mobile">
         <div w3-include-html="../shared/sidebar.html">
         </div>
     </div>
     <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Frameworks</h1>
             <img class="video" src="../../img/video.png">
@@ -23,21 +23,21 @@
                 </div>
 
                 <div class="box_reading">
-                    <div class="box_title">Further reading</div>
+                    <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                     <p><a href="https://proquest.safaribooksonline.com/9780470084113">Chapter 7: From Requirements to Design: The Framework and Refinement</a> by Cooper (2007), book chapter in About Face 3</p>
                     <p><a href="https://material.io/">Material Design</a> by Google</p>
                     <p><a href="https://developer.apple.com/design/human-interface-guidelines/">Human Interface Guidelines</a> by Apple</p>
                     <p><a href="https://medium.muz.li/how-to-create-a-style-guide-from-scratch-tips-and-tricks-e00f25b423bf">How To Create a Style Guide From Scratch. Tips and Tricks</a> by Andrei Dorin, online article</p>
                 </div>
                 <div class="box_reading templates_text">
-                    <div class="box_title templates_title">Templates</div>
+                    <div class="box_title templates_title"><i class="fa fa-file"></i>Templates</div>
                     <p><a href=" https://framework7.io/">Framework 7</a></p>
 
                     <p><a href="https://www.xdguru.com/xd-style-guide-template/">Style guide template for Adobe XD</a> by Tyler Wain</p>
                     <p><a href="https://www.figma.com/file/jGbijAu6UH8ceOO5EyO9kq/Figma-Design-System-(Free-Edition)/duplicate?node-id=0%3A1">Style guide template for Figma</a> by SaaS Design</p>
                 </div>
                 <div class="box_reading tasks_text">
-                    <div class="box_title tasks_title">Task 11</div>
+                    <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 11</div>
                     <p>Discuss your considerations and decisions with your programming tutor. Document your decision process and why you chose which design language on not more than one page in <code>iteration-3/analysis</code> in the GitHub <code>master</code> branch.</p>
                 </div>
         </section>
@@ -45,7 +45,7 @@
 </div>
 </body>
 </html>
-
+<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

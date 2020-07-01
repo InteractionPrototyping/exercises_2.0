@@ -3,9 +3,9 @@
     --text-color-light: #ffffff;
     --text-color-grey: #b7b7b7;
     --primary-color: #fba97a;
-    --secondary-color-blue: #53acff;
+    --secondary-color-blue: #148EFF;
     --secondary-color-purple: #8e7cc3;
-    --secondary-color-green: #b6d7a8;
+    --secondary-color-green: #609A47;
 }
 
 body {
@@ -18,9 +18,8 @@ section {
 
 aside {
     height: 100vh;
-    padding:0 1vw;
+    padding:20px 30px;
     position:fixed;
-    padding-top:20px;
     /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
@@ -43,6 +42,7 @@ aside {
     transition: max-height 0.2s ease-out;
     box-shadow:none!important;
     /*or better with shadow? */
+    border-radius:0!important;
 }
 
 .video {
@@ -56,34 +56,34 @@ aside {
 .box_title{
     font-weight: bold;
     padding-bottom:1vh;
-    color:#0067C7!important;
+    color:var(--secondary-color-blue)!important;
 }
 
 .box_reading {
     box-shadow: none!important;
     background-color: #F5F5F5 !important;
-    border-left: #0067C7 3px solid;
+    border-left: var(--secondary-color-blue) 3px solid;
     display:block;
     padding: 0.5rem 1rem;
     margin-top:1rem;
 }
 
 .tasks_title {
-    color:#C28400!important;
+    color:var(--secondary-color-green)!important;
 }
 
 .tasks_text {
-    background-color: #FFFDFA !important;
-    border-left: #C28400 3px solid;
+    background-color: #F9FCF8 !important;
+    border-left: var(--secondary-color-green) 3px solid;
 }
 
 .templates_title {
-    color:#7D69BA!important;
+    color:var(--secondary-color-purple)!important;
 }
 
 .templates_text {
     background-color: #F5F4FA !important;
-    border-left: #7D69BA 3px solid;
+    border-left: var(--secondary-color-purple) 3px solid;
 }
 
 .quote{
@@ -122,6 +122,14 @@ aside {
     list-style-type: circle;
 }
 
+.fa {
+    padding: 5px;
+}
+
+.task_box {
+    background-color: white;
+}
+
 #spiral {
     height:95vh;
     margin:auto;
@@ -135,5 +143,31 @@ aside {
     margin-right:40px;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--primary-color); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+}
 
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+#search {
+    background-color: var(--primary-color);
+}
+
+#aside {
+    padding-left:30px;
+}
 

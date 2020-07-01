@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
     <div w3-include-html="../shared/header.html"></div>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-fifth  is-sidebar-menu is-hidden-mobile">
+    <div id="aside" class="column is-one-quarter  is-sidebar-menu is-hidden-mobile">
         <div w3-include-html="../shared/sidebar.html">
         </div>
     </div>
     <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Style a prototype</h1>
             <img class="video" src="../../img/video.png">
@@ -25,20 +25,20 @@
             <img class="video" src="../../img/tools.png">
             <h1 class="title is-4">Choosing colors</h1>
             <div class="box_reading">
-                <div class="box_title">Further reading</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://uxdesign.cc/all-you-need-to-know-about-colors-in-ui-design-theory-practice-235179712522">All you need to know about colors in UI Design</a> by Christian Vizcarra, blog article</p>
                 <p><a href="https://medium.com/@erikdkennedy/color-in-ui-design-a-practical-framework-e18cacd97f9e">Color in UI Design: A (Practical) Framework</a> by Erik Kennedy, blog article</p>
                 <p><a href="https://uxplanet.org/color-theory-brief-guide-for-designers-76e11c57eaa">Color Theory: Brief Guide For Designers</a> by Tubik Studio, blog article</p>
             </div>
             <div class="box_reading">
-                <div class="box_title">Color tools</div>
+                <div class="box_title"><i class="fa fa-bookmark"></i>Color tools</div>
                 <p><a href=" https://color.adobe.com/create/color-wheel">Color wheel</a> by Adobe, website</p>
                 <p><a href="https://www.sessions.edu/color-calculator/">Color calculator</a> by sessionscollege, website</p>
                 <p><a href="https://coolors.co/817f82-ae8ca3-a2abb5-95d9da-6dd6da">Color palettes</a> by coolors, website</p>
             </div>
 
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title">Task 12</div>
+                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 12</div>
                 <p>Document at least 3 example screens following the new style as images in <code>iteration-3/design</code> in the GitHub <code>master</code> branch.</p>
             </div>
 
@@ -47,7 +47,7 @@
 </div>
 </body>
 </html>
-
+<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>
