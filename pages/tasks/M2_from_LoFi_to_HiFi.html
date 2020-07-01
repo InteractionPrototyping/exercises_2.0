@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <div w3-include-html="../shared/header.html"></div>
+    <script src="../../js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-quarter  is-sidebar-menu is-hidden-mobile">
-        <div w3-include-html="../shared/sidebar.html">
-        </div>
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
     </div>
+
     <div class="column" id="content">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
@@ -20,7 +29,7 @@
                 <p>Apply your knowledge gained from analyzing UML, usability requirements and goals, as well as the principles: Put to the side your paper prototype from the first iteration and redraw it using what you have learned (e.g., principles). Do not fear fear - just do it; "the chance of you hitting the bulls eye with you first shot is very slim" (Pereyra). Also use the findings from your evaluation of the first iteration. To see why this is important, see "Paper prototyping" according to the Nielson Norman Group.</p>
             </div>
             <div class="box_reading">
-                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://www.nngroup.com/articles/paper-prototyping/">Paper Prototyping: Getting User Data Before You Code</a> by Jakob Nielsen, online article</p>
                 <p><a href="https://ui-patterns.com/">User Interface Design patterns</a> by UI Patterns, website</p>
                 <p><a href="https://littlebigdetails.com/">Little Big Details</a> by Floris Dekker, blog</p>
@@ -29,7 +38,7 @@
             </div>
 
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Task 7</div>
+                <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task 7</div>
                 <p> Upload your screens <code>iteration-2/design</code> in the GitHub <code>master</code> branch.</p>
             </div>
 
@@ -38,7 +47,6 @@
 </div>
 </body>
 </html>
-<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

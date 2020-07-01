@@ -2,15 +2,24 @@
 <html lang="en">
 <head>
     <script src="../../js/include.js"></script>
-    <div w3-include-html="../shared/header.html"></div>
+    <script src="../../js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="accordion()">
 <div class="columns is-fullheight">
-    <div id="aside" class="column is-one-quarter  is-sidebar-menu is-hidden-mobile">
-        <div w3-include-html="../shared/sidebar.html">
-        </div>
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
     </div>
+
     <div class="column" id="content">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
@@ -18,7 +27,7 @@
             <h1 class="title is-4">Interview methods</h1>
             <img class="video" src="../../img/video.png">
             <div class="box_reading">
-                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://download.microsoft.com/download/b/0/d/b0d4bf87-09ce-4417-8f28-d60703d672ed/inclusive_toolkit_manual_final.pdf">Inclusive Toolkit</a> by Microsoft, pdf </p>
                 <p><a href="https://www.mendeley.com/catalogue/7b784879-feeb-3a64-a5a8-075e88d2f7eb/">Guerrilla HCI</a> by Nielsen (1994), paper </p>
                 <p><a href="https://uxdesign.cc/contextual-inquiry-a-primer-14e2e0696fb9">Go beyond user interviews with contextual inquiry</a> by Patrick Thornton, online article</p>
@@ -26,7 +35,7 @@
                 <p><a href="https://www.youtube.com/watch?v=3TwgVQIZPsw">Focus Groups</a> by TED-ed, video</p>
             </div>
             <div class="box_reading">
-                <div class="box_title"><i class="fa fa-bookmark"></i>Video examples</div>
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Video examples</div>
                 <p><a href="https://www.youtube.com/watch?v=xjHZsEcSqwo">"Moderating focus groups"</a> by Richard Krueger</p>
                 <p><a href="https://www.youtube.com/watch?v=G0zuEtvnIAY">"Example of Laddering with hints and tips"</a> by Joanna Chrzanowska</p>
             </div>
@@ -44,7 +53,7 @@
             </div>
 
             <div class="box_reading">
-                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://www.nngroup.com/articles/diary-studies/">Diary Studies: Understanding Long-Term User Behavior and Experiences</a> by Kim Flaherty, online article</p>
                 <p><a href="https://www.nngroup.com/articles/observer-guidelines/">Observer Guidelines for Usability Research</a> by Susan Farrell, online article</p>
                 <p><a href="https://www.youtube.com/watch?v=GWqEJzxcdDQ">Product Development Process: Observation</a> by David M. Kelley, video</p>
@@ -62,7 +71,7 @@
                 <p>Write user scenarios (narrative) in which the personas use your mobile app. Use the personas to come up with scenarios in which the app is utilized.</p>
             </div>
             <div class="box_reading">
-                <div class="box_title"><i class="fa fa-bookmark"></i>Further reading</div>
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
                 <p><a href="https://proquest.safaribooksonline.com/9780470084113">Chapter 5: Modeling Users: Personas and Goals</a> by Cooper (2007), book chapter in About Face 3</p>
                 <p><a href="https://proquest.safaribooksonline.com/9780470084113">Chapter 6: The Foundations of Design: Scenarios and Requirements</a> by Cooper (2007), book chapter in About Face 3</p>
                 <p><a href="http://www.usability.gov/how-to-and-tools/methods/personas.html">Personas</a> by Usability.gov, online article</p>
@@ -71,13 +80,13 @@
                 <p><a href="https://www.nngroup.com/articles/why-personas-fail/">Why personas fail</a> by Kim Flaherty, online article</p>
             </div>
             <div class="box_reading templates_text">
-                <div class="box_title templates_title"><i class="fa fa-file"></i>Templates</div>
+                <div class="box_title templates_title"><i class="icons fa fa-file"></i>Templates</div>
                 <p><a href="https://www.invisionapp.com/inside-design/user-persona-template/">Personas</a> by Tony Ho Tran</p>
                 <p><a href="https://jobs-to-be-done.com/the-jobs-to-be-done-market-discovery-template-7bfd02220417">Jobs to be done</a> by Tony Ulwick</p>
                 <p><a href="https://app.mural.co/template/a8de4f06-b402-45ed-8eb2-bc17cf567b5e/0444b92d-148e-46b7-86cc-83a7b4a15d6b">Jobs to be done 2</a> by Mural</p>
             </div>
             <div class="box_reading tasks_text">
-                <div class="box_title tasks_title"><i class="fa fa-check-square-o"></i>Tasks 1 & 2</div>
+                <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Tasks 1 & 2</div>
                 <p>Summarize the results of your qualitative research (not more than 1 page) in a folder <code>iteration-1/user-research</code> in the GitHub <code>master</code> branch.</p>
                 <p>Document your personas and scenarios (e.g. in .ppt) in a folder <code>iteration-1/user-research</code> in the GitHub <code>master</code> branch.</p>
             </div>
@@ -92,7 +101,6 @@
 </div>
 </body>
 </html>
-<script src="../../js/script.js"></script>
 <script>
     includeHTML();
 </script>

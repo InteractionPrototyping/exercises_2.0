@@ -122,20 +122,18 @@ aside {
     list-style-type: circle;
 }
 
-.fa {
-    padding: 5px;
+.icons {
+    margin-right: 5px;
+}
+
+.is-blurred {
+    filter: blur(10px);
 }
 
 .task_box {
     background-color: white;
 }
 
-#spiral {
-    height:95vh;
-    margin:auto;
-    margin-top:1vw;
-    display:block;
-}
 
 #content {
     margin-top:20px;
@@ -170,4 +168,18 @@ aside {
 #aside {
     padding-left:30px;
 }
+
+#spiral {
+    max-height:95vh;
+    width:auto;
+    padding-top:20px;
+}
+
+#burger_menu {
+    padding-top:50px;
+}
+
+
+
+
 
