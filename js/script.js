@@ -1,6 +1,6 @@
 var acc = document.getElementsByClassName("accordion");
 var acc2 = document.getElementsByClassName("active");
-var acc3 = document.getElementsByClassName("is-active");
+var acc3 = document.getElementsByClassName("section");
 var i;
 var j;
 
@@ -40,29 +40,22 @@ function removeActive () {
     }
 }
 
-mybutton = document.getElementById("myBtn");
+function activeSection () {
+    this.classList.toggle("is-active");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+    // for (i = 0; i < acc3.length; i++) {
+    //         if (acc3[i].className === "is-active") {
+    //             acc3[i].classList.toggle("is-active");
+    //         }
+    // }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
 
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
@@ -82,4 +75,29 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    $sections.forEach(el => {
+        el.addEventListener('click',() => {
+            el.classList.toggle("is-active");
+        })
+    })
 });
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

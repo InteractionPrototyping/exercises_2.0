@@ -20,7 +20,12 @@ aside {
     height: 100vh;
     padding:20px 30px;
     position:fixed;
+    overflow:auto;
     /*box-shadow: 1px 19px 10px lightgrey;*/
+}
+
+aside::-webkit-scrollbar {
+    display: none;
 }
 
 .custom-list {
@@ -165,9 +170,6 @@ aside {
     background-color: var(--primary-color);
 }
 
-#aside {
-    padding-left:30px;
-}
 
 #spiral {
     max-height:95vh;
@@ -178,6 +180,7 @@ aside {
 #burger_menu {
     padding-top:50px;
 }
+
 
 
 
