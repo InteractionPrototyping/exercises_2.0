@@ -172,7 +172,7 @@ aside::-webkit-scrollbar {
 
 
 #spiral {
-    max-height:95vh;
+    max-height:90vh;
     width:auto;
     padding-top:20px;
 }
@@ -181,7 +181,9 @@ aside::-webkit-scrollbar {
     padding-top:50px;
 }
 
-
+#logo {
+    margin-bottom: 20px;
+}
 
 
 

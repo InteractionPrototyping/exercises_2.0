@@ -13,6 +13,7 @@ function accordion () {
     activeSection.classList.add("is-active");
     */
     /*expand accordion*/
+    activeSection();
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             if (this.className === "accordion") {
@@ -21,10 +22,10 @@ function accordion () {
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
-                this.classList.remove("active");
+                this.classList.toggle("active");
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
-                this.classList.add("active");
+                this.classList.toggle("active");
             }
         });
     }
@@ -38,16 +39,6 @@ function removeActive () {
             acc2[j].classList.remove("active");
         }
     }
-}
-
-function activeSection () {
-    this.classList.toggle("is-active");
-
-    // for (i = 0; i < acc3.length; i++) {
-    //         if (acc3[i].className === "is-active") {
-    //             acc3[i].classList.toggle("is-active");
-    //         }
-    // }
 }
 
 
@@ -76,11 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    $sections.forEach(el => {
-        el.addEventListener('click',() => {
-            el.classList.toggle("is-active");
-        })
-    })
+
 });
 
 mybutton = document.getElementById("myBtn");
@@ -100,4 +87,18 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function activeSection() {
+    const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
+    let currentURL = window.location.href;
+    $sections.forEach(el => {
+        if (el.href === currentURL) {
+            el.classList.toggle('is-active');
+            //console.log(el.parentElement.parentElement.previousElementSibling);
+            if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
+                el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
+            }
+        }
+    })
 }

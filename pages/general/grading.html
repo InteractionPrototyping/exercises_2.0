@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <script src="../../js/include.js"></script>
     <script src="../../js/script.js"></script>
-    <div w3-include-html="../shared/header.html"></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
-<body onload="accordion('grading')">
-<div w3-include-html="../shared/sidebar.html"></div>
+<body onload="accordion()">
+<div class="columns is-fullheight">
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+
+    <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <section>
+            <h1 class="title">Grading and expectation</h1>
+            <h1 class="title is-4">Introduction</h1>
+            <div>
+                <p>The team project aims to freely design and prototype an interactive mobile application in HTML/CSS/JavaScript. You will work in five iterations (with corresponding milestones). Throughout each iteration, you will follow the user-centered design process. This design process includes analysis, design, implementation and evaluation.</p>
+                <p>Prototype functionalities will be freely and independently designed by your team, depending on your creativity in brainstorming, the gathered user and usability requirements, as well as your use cases and scenarios. The user will be able to perform interactions, for example: buying, listing, viewing, informing, playing, searching.</p>
+                <p>Note: The course focuses on interaction prototyping. Even if your required/specified feature is not fully functional, you can simulate it and work on evaluating the corresponding user interface.</p>
+            </div>
+        </section>
+    </div>
+</div>
 </body>
 </html>
-
 <script>
     includeHTML();
 </script>
