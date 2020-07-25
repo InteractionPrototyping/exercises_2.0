@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="accordion()">
+<div class="columns is-fullheight">
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+
+    <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <section>
+            <h1 class="title">Presentation M4</h1>
+            <div>
+                <p>Prepare a short presentation (15 min presentation + 5 min discussion) on your approach, which includes the <b>demonstration of the final prototype</b> and <b>presentation of experiment design</b>.</p><br/>
+            </div>
+            <div class="box_reading tasks_text">
+                <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task 20</div>
+                <p><b>Bring the app, measuring equipment, questionnaires, etc. to the lecture</b>. Be prepared to discuss your app and evaluation methods!</p>
+            </div>
+        </section>
+        <section>
+            <div class="box_reading important_text">
+                <div class="box_title important_title"><i class="icons fas fa-exclamation-triangle"></i>Deadline</div>
+                <p><b>Important Deadline: After the presentation, you still have 7 days (until 21.01.20 at 23:59:59) to fine-tune and finalize your prototype based on the feedbacks. Afterwards, your GitHub repository will be freezed, and no change will be taken into the final evaluation.</b> Tips: don't be demotivated by the imperfection of your prototype, it is still a prototype at this freezing point. For all team members, please move on and be consentrated on the final evaluation.</p>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    includeHTML();
+</script>
