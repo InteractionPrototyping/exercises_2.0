@@ -28,7 +28,7 @@ aside::-webkit-scrollbar {
     display: none;
 }
 
-ol,ul, ol>li {
+ol>li {
     padding:10px 0!important;
 }
 
