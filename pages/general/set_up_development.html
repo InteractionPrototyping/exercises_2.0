@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="accordion()">
+<div class="columns is-fullheight">
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+
+    <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <section>
+            <h1 class="title">Set up the development environment</h1>
+            <h1 class="title is-4">The device</h1>
+            <div>
+                <p>Get one <b>phone (Nexus 5X)</b> per team: for collecting it in room MW3304 (Lorenz Prasch), bring your ID card or passport. One team member needs to sign the lending and will be responsible for the phone until return at the end of the semester.</p>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="title is-4">The environment</h1>
+            <div>
+                <p>Set up an environment for creating HTML documents on your computer.</p>
+                <ul>
+                    <li class="bullets">Recommended Editor: Brackets</li>
+                    <li class="bullets">Recommended Browser: Chrome</li>
+                </ul>
+                <br/>
+                <p><b>Create</b> a HTML page (e.g. the HTML skeleton in the slides) with some elements (headline, paragraphs …) and <b>open</b> it in your browser.</p>
+                <p>Access the Chrome <b>developer tools</b> and inspect the elements in your document. Activate the device emulation (Nexus 5s):</p>
+                <br/>
+                <img src="../../img/device-emulation.png">
+                <p><br/><b>Hint:</b> If you have not already set up eduroam, do so for this project.</p>
+
+                <div class="box_reading">
+                    <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
+                    <p><a href="http://brackets.io/">Brackets</a></p>
+                    <p><a href="https://www.google.com/chrome/">Google Chrome</a></p>
+                    <p><a href="https://www.w3schools.com/html/html_editors.asp">Tutorial: Opening a html page in a browser</a></p>
+                    <p><a href="https://www.it.tum.de/faq/it-dienste/internet/">Setting up eduroam</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="title is-4">Starting the app</h1>
+            <div>
+                <p>You can now make your HTML accessible via github.io, a web server publishing all documents you have in the GitHub branch <code>gh-pages</code>.</p>
+
+                <ol>
+                    <li class="numbers">Go to your project repository: <a>https://github.com/interactionprototyping/GROUP</a> (where GROUP is your group's chosen name)</li>
+                    <li class="numbers">Create a <code>gh-pages</code> branch, which is used to publish your site:
+                    <img src="../../img/github-create-branch.png"></li>
+                    <li class="numbers">Make <code>gh-pages</code> your default branch (go to <img src="../../img/github-settings.png" alt="github settings">, right side): <img src="../../img/github-default-branch.png"> </li>
+                    <li class="numbers">The files, you commit to this branch, are published under <a>http://interactionprototyping.github.io/GROUP/FILE.html</a> (where GROUP is your group name and FILE the filename of the document you committed). <b>Convention</b>: If you name your application’s starting page <code>index.html</code>, you don’t need to enter a filename in your browser: typing <a>http://interactionprototyping.github.io/GROUP</a> will then be enough.</li>
+                    <li class="numbers">You can access these files in your phone’s browser. Wait five minutes for the first usage after setting up <code>gh-pages</code>.</li>
+                </ol>
+
+
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    includeHTML();
+</script>

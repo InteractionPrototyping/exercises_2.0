@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="accordion()">
+<div class="columns is-fullheight">
+
+    <div class="column is-one-quarter is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+
+    <div class="column" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <section>
+            <h1 class="title">Git Commands</h1>
+            <h1 class="title is-4">"History is written by those who push first"</h1>
+            <div>
+                <p>Git is separated into four levels: <b>workspace/ working directory, index, local repository, and online repository</b>. The Git commands allow to organize these four levels to realize the high functionality of Git. A few important commands are explained in the following graphic.</p>
+            </div>
+            <img src="../../img/git-stages.svg">
+        </section>
+
+        <section>
+            <h1 class="title is-4">Workspaces, branches, index, history, repository</h1>
+            <div>
+                <p>The following list briefly explains the concepts. Items marked with * are the levels, we're going to work with during the course.</p>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Workspace*</h2>
+                    <p>The workspace is the actual folder on your computer, within you make your modifications.</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">History*</h2>
+                    <p>With the history function of Git and GitHub, it is possible to revert a single commit in the past or to roll back the whole project to a selected point.</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Local & Online Repository*</h2>
+                    <p>These repositories are the “containers“, where your project is stored. After all synchronisation, both repositories, online and offline, are all the same.</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Branches</h2>
+                    <p>Working with branches allows to test different versions of one commit. If you are not sure, which possibility might be the best one, you simply set up another branch und implement both versions at the same time. After you made your choice, you have the possibility to merge the commits from the two branches. In order to access your HTML/CSS/JS prototype directly as a www app (contrary to inspecting the code in the www), you need to use the branch <code>gh-pages</code>.</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Index</h2>
+                    <p>As kind of a meta-level, the index isn‘t directly visible or editable. Before commiting your modifications, GitHub creates this index, which will be posted to your local repository.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1 class="title is-4">Basic Git Commands</h1>
+            <div>
+                <p>The following basic commands are necessary:</p>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Commit</h2>
+                    <p>Commit a file to bring it under versioning control (you can later revert to this revision or compare differences)</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Push</h2>
+                    <p>Push a file to bring it online (available for other team members)</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Checkout</h2>
+                    <p>Checkout of a file brings it back to your workspace in a certain version (available for inspection and modification)</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Pull</h2>
+                    <p>Pull a file to bring it from the online repository to your local workspace.</p>
+                </div>
+            </div>
+            <br/>
+
+            <h1 class="title is-4">Advanced Git Commands</h1>
+            <div>
+                <p>When using the GitHub GUI, you will find several buttons, which are not classic Git commands. These buttons often unite a few commands to one action that performs a special and necessary task. Again, items marked with * are the levels, we're most likely going to work with during the course.</p>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Sync*</h2>
+                    <p>The snyc action unites the commands add, commit, push, fetch and checkout. By syncing your local repository, you do load the latest version of the online repo while updating the online version with your commits.</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Revert*</h2>
+                    <p>The revert action creates a new commit that reverts all changes up to the selected commit (this means, the revert is also revertable).</p>
+                </div>
+                <div class="expectation_box">
+                    <h2 class="expectation_box_title">Roll-back</h2>
+                    <p>The roll-back action reverts all changes that were committed after the selected commit. This is not reversible!</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+</body>
+</html>
+<script>
+    includeHTML();
+</script>
