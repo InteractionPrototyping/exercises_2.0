@@ -103,7 +103,7 @@ footer {
 
 .box_reading {
     box-shadow: none!important;
-    background-color: #F5F5F5 !important;
+    background-color: #edf6ff !important;
     border-left: var(--secondary-color-blue) 3px solid;
     display:block;
     padding: 0.5rem 1rem;
@@ -199,6 +199,11 @@ footer {
 .expectation_box_title {
     color:var(--primary-color);
     font-weight: bold;
+}
+
+.menu-list a.is-active {
+    color:#3273dc!important;
+    background-color: white!important;
 }
 
 #is-sidebar-menu {
