@@ -1,4 +1,4 @@
-<nav class="navbar is-hidden-tablet is-pulled-left" role="navigation" aria-label="main navigation">
+<nav class="navbar is-hidden-fullhd is-pulled-left" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a role="button"  class="navbar-burger" id="navbar-burger" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
@@ -88,19 +88,21 @@
     </div>
 
 </nav>
-<aside class="menu is-hidden-mobile">
+<aside class="menu is-hidden-touch">
     <div id="logo">
         <img src="/exercises_2.0/img/tum.svg"/>
         <h1 class="title is-6">Interaction Prototyping</h1>
     </div>
     <div class="field has-addons">
         <div class="control">
-            <input class="input" type="text" placeholder="Search">
+            <form action="/search/" method="GET">
+            <input required type="search" name="q" class="input" placeholder="Search">
+            </form>
         </div>
         <div class="control">
-            <a class="button is-info" id="search">
+            <button type="submit" class="button is-info" id="search">
                 <i class="fa fa-search"></i>
-            </a>
+            </button>
         </div>
     </div>
     <p class="menu-label">

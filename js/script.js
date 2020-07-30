@@ -70,15 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-mybutton = document.getElementById("myBtn");
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton = document.getElementById("myBtn");
         mybutton.style.display = "block";
+        console.log(mybutton);
     } else {
+        mybutton = document.getElementById("myBtn");
         mybutton.style.display = "none";
     }
 }
