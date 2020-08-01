@@ -22,6 +22,10 @@
         margin-top:40px!important;
     }
 
+    #navigation {
+        text-align: center;
+    }
+
 }
 
 
@@ -230,6 +234,7 @@ columns {
 #navigation {
     position: sticky;
     top:20px;
+    margin:auto;
 }
 
 #next_page {
