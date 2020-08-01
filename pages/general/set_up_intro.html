@@ -14,7 +14,7 @@
     <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
 </head>
 
-<body onload="accordion()">
+<body onload="accordion(); variables()">
 <div class="columns is-fullheight">
 
     <div class="column is-one-quarter is-sidebar-menu">
@@ -44,7 +44,7 @@
                 <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
                <ol>
                    <li class="numbers">Create free GitHub account</li>
-                   <li class="numbers">Send your <b>GitHub user names and your group's chosen name</b> to Yucheng Yang.</li>
+                   <li class="numbers">Send your <b>GitHub user names and your group's chosen name</b> to <span id="name_person"></span></li>
                    <li class="numbers">You will be given access to the repository <a>https://github.com/interactionprototyping/GROUP</a>, where GROUP is your chosen name.</li>
                    <li class="numbers">Download and install the Windows or Mac client.</li>
                    <li class="numbers">Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>

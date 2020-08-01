@@ -105,3 +105,26 @@ function activeSection() {
         }
     })
 }
+
+function variables() {
+
+    //In Footer: automatic term selection
+    var year = (new Date()).getFullYear();
+    var month = (new Date()).getMonth();
+    if (month < 3) {
+        term = "Winter Term " + (year - 1) + "/" + year;
+    } else if (month > 8) {
+        term = "Winter Term " + year + "/" + (year + 1)
+    } else {
+        term = "Summer Term " + year;
+    }
+    document.title = "Interaction Prototyping: " + term;
+    document.getElementById("term").innerHTML = term;
+
+    //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
+    document.getElementById("name_person").innerHTML = "Yucheng Yang.";
+
+    //Update schedule manually in index.html
+
+
+}

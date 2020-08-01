@@ -35,9 +35,10 @@ section {
 
 aside {
     height: 100vh;
-    padding:20px 30px;
+    padding:20px 0px;
     position:fixed;
     overflow:auto;
+    z-index: -1;
     /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
@@ -59,6 +60,7 @@ footer {
     width:100%;
     margin:40px 0 0 0;
     padding:0;
+    z-index: 2;
 }
 
 .authors_list{
@@ -206,6 +208,34 @@ footer {
     background-color: white!important;
 }
 
+.navigation_arrow {
+    color:var(--primary-color);
+    font-size: 1.5em;
+}
+
+.navigation_button {
+    background-color: white;
+    border:0.5px solid #F2F2F2;
+    padding:1em 2em;
+}
+
+.column {
+    margin-top:20px!important;
+}
+
+columns {
+    width:100vw;
+}
+
+#navigation {
+    position: sticky;
+    top:20px;
+}
+
+#next_page {
+    color:lightgrey;
+}
+
 #is-sidebar-menu {
     width:100%;
 }
@@ -242,7 +272,6 @@ footer {
 
 #spiral {
     max-height:90vh;
-    width:auto;
     padding-top:20px;
 }
 
