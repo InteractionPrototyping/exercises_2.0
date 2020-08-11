@@ -1,4 +1,4 @@
-
+/*
 
 var searchIndex = lunr(function() {
     this.ref("id");
@@ -40,3 +40,5 @@ resultPages.forEach(function (r) {
     resultsString += "</li>"
 });
 document.querySelector("#search-results").innerHTML = resultsString;
+
+*/

@@ -4,15 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="a-T4itwPFKWMD5APZ8Kdr_A16BNBLCehy5V0NaJfao8" />
     <title>IPP</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
     <script src="js/search.js"></script>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
+
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 <body onload="accordion(); variables()">
 
@@ -73,7 +76,7 @@
 
 
         </div>
-        <div class="column is-1">
+        <div class="column is-2">
             <div id="navigation">
                 <div class="level">
                     <div class="level-item">
@@ -82,6 +85,27 @@
                     </div>
                 </div>
                 <span id="next_page">Next: Grading and expectations</span>
+
+            <div id="tasks">
+                <br/>
+                <p class="menu-label">Tasks iteration 1</p>
+                <div>
+                    <input type="checkbox" id="task1" autocomplete="on">
+                    <label for="task1">Qualitative evaluation</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="task2">
+                    <label for="task2">Personas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="task3">
+                    <label for="task3">Screen images</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="task4">
+                    <label for="task4">Usability report</label>
+                </div>
+            </div>
             </div>
         </div>
 
@@ -110,20 +134,22 @@
 
 Task bundle 1
 #TODO: WIP Get search to work (https://davidwalsh.name/adding-search-to-your-site-with-javascript)
-#TODO: Tasks on right
+#TODO: Test on computer: Tasks on right
 #TODO: Test on computer: Arrow to navigate top right
 #TODO: Test On computer: margins
 
 
 Task bundle 2
-#TODO: Re-check color combinations 3:1 contrast
 #TODO: Checkmarks for progress
 #TODO: Spiral change font and make interactive
 #TODO: Light theme with SaaS?
-#TODO: Link slides as pdf?
+
 
 Nice to have
+#TODO: Re-check color combinations 3:1 contrast
+#TODO: Link slides as pdf?
 #TODO: Arrow different direction if accordion open
 #TODO: Quicklink to current iteration (with current tasks)
 #TODO: Feedback field
+
 -->

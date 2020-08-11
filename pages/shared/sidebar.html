@@ -93,18 +93,29 @@
         <img src="/exercises_2.0/img/tum.svg"/>
         <h1 class="title is-6">Interaction Prototyping</h1>
     </div>
-    <div class="field has-addons">
-        <div class="control">
-            <form action="/search/" method="GET">
-            <input required type="search" name="q" class="input" placeholder="Search">
-            </form>
-        </div>
+
+    <form action="https://www.google.com/search" id="form-search">
+        <label for="input-search">Enter your search criteria:</label>
+        <input type="text" name="q" id="input-search" value=" site:your-domain.com">
+        <button id="submit-search">Search</button>
+    </form>
+        <!-- Test 1
         <div class="control">
             <button type="submit" class="button is-info" id="search">
                 <i class="fa fa-search"></i>
             </button>
         </div>
-    </div>
+        -->
+        <!-- Test 2
+        <div class="field has-addons">
+        <div class="control">
+            <form action="/search/" method="GET">
+            <input required type="search" name="q" class="input" placeholder="Search">
+                <button type="submit" class="button is-info" id="search"></button>
+            </form>
+        </div>
+        </div>
+        -->
     <p class="menu-label">
         General
     </p>
