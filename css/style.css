@@ -1,11 +1,26 @@
 :root {
-    --bg-color: #434343;
-    --text-color-light: #ffffff;
-    --text-color-grey: #b7b7b7;
+    --bg-color: #FFFFFF;
+    --bg-color-footer: #FAFAFA;
+    --text-color-primary: #4a4a4a;
+    --text-color-secondary: #7a7a7a;
     --primary-color: #fba97a;
     --secondary-color-blue: #148EFF;
     --secondary-color-purple: #8e7cc3;
     --secondary-color-green: #609A47;
+    --border-color: #F2F2F2;
+}
+
+[data-theme="dark"] {
+    --bg-color: #434343;
+    --bg-color-footer: #6b6b6b;
+    --text-color-primary: #FFFFFF;
+    --text-color-secondary: #d1d1d1;
+    --primary-color: #fba97a;
+/*    --secondary-color-blue: #96ceff;*/
+    --secondary-color-blue: #148EFF;
+    --secondary-color-purple: #8e7cc3;
+    --secondary-color-green: #b6d7a8;
+    --border-color:#6b6b6b;
 }
 
 
@@ -28,10 +43,95 @@
 
 }
 
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin:20px 0;
+}
+
+em {
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+
+
+.theme-switch {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    width: 45px;
+}
+
+.theme-switch input {
+    display:none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color:var(--bg-color);
+    bottom: 3.5px;
+    content: "";
+    height: 18px;
+    left: 3.5px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+input:checked + .slider {
+    background-color: var(--bg-color-footer);
+}
+
+input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+.input  {
+    background-color: var(--bg-color-footer) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+.input::placeholder {
+    color:var(--text-color-secondary) !important;
+
+}
+
+
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+html {
+    background-color: var(--bg-color)!important;
+}
+
+body, aside, h1, h2, h3, ul, li, aside a, strong {
+    color:var(--text-color-primary)!important;
+}
 
 body {
     min-height: 100%;
 }
+
+a {
+    color:var(--secondary-color-blue)!important;
+}
+
 
 section {
     margin-bottom:5%;
@@ -39,7 +139,7 @@ section {
 
 aside {
     height: 100vh;
-    padding:20px 0px;
+    padding:0px;
     position:fixed;
     overflow:auto;
     z-index: 0;
@@ -67,6 +167,10 @@ footer {
     z-index: -1;
 }
 
+.footer {
+    background-color: var(--bg-color-footer)!important;
+}
+
 .authors_list{
     margin-bottom:0.5em!important;
 }
@@ -77,6 +181,15 @@ footer {
 
 .menu-list li ul {
     margin:0!important;
+}
+
+.menu-list a:hover {
+    background-color: var(--bg-color-footer) !important;
+    color:var(--text-color-secondary) !important;
+}
+
+.menu-label {
+    color:var(--text-color-secondary) !important;
 }
 
 .accordion {
@@ -116,8 +229,9 @@ footer {
     margin-top:1rem;
 }
 
-.tasks_title {
+.tasks_title, .tasks_title.icons {
     color:var(--secondary-color-green)!important;
+    fill:var(--secondary-color-green)!important;
 }
 
 .tasks_text {
@@ -140,7 +254,7 @@ footer {
 }
 
 .important_title {
-    color: var(--bg-color)!important;
+    color: var(--text-color-primary)!important;
 }
 
 .quote{
@@ -208,8 +322,8 @@ footer {
 }
 
 .menu-list a.is-active {
-    color:#3273dc!important;
-    background-color: white!important;
+    color:var(--primary-color)!important;
+    background-color: var(--bg-color)!important;
 }
 
 .navigation_arrow {
@@ -218,8 +332,8 @@ footer {
 }
 
 .navigation_button {
-    background-color: white;
-    border:0.5px solid #F2F2F2;
+    background-color: var(--bg-color);
+    border:0.5px solid var(--border-color);
     padding:1em 2em;
 }
 
@@ -238,7 +352,7 @@ columns {
 }
 
 #next_page {
-    color:lightgrey;
+    color:var(--text-color-secondary);
 }
 
 #is-sidebar-menu {
@@ -292,5 +406,13 @@ columns {
     width:100%;
 }
 
+#search_field {
+    width:70%;
+}
+
+#theme {
+    margin:10px;
+    font-size:21px;
+}
 
 

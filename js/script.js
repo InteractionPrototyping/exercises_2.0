@@ -128,65 +128,138 @@ function variables() {
     } else {
     }
 
-
-
-    //Update schedule manually in index.html
-}
-
-/*
-function handleButtonClick(button){
-    if ($(button).text().match("Check all")){
-        $(":checkbox").prop("checked", true)
+    // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
+    var el = document.getElementById('task8');
+    if (el != null) {
+        document.getElementById("task8").innerHTML = "xx.xx.2020";
     } else {
-        $(":checkbox").prop("checked", false)
-    };
-    updateButtonStatus();
-}
-
-function updateButtonStatus(){
-    var allChecked = $(":checkbox").length === $(":checkbox:checked").length;
-    $("button").text(allChecked? "Uncheck all" : "Check all");
-}
-
-function updateCookie(){
-    var elementValues = {};
-    $(":checkbox").each(function(){
-        elementValues[this.id] = this.checked;
-    });
-
-    elementValues["buttonText"] = $("button").text();
-    $.cookie('elementValues', elementValues, { expires: 7, path: '/' })
-}
-
-function repopulateFormELements(){
-    var elementValues = $.cookie('elementValues');
-    if(elementValues){
-        Object.keys(elementValues).forEach(function(element) {
-            var checked = elementValues[element];
-            $("#" + element).prop('checked', checked);
-        });
-
-        $("button").text(elementValues["buttonText"])
     }
+
+    // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
+    var el = document.getElementById('task9');
+    if (el != null) {
+        document.getElementById("task9").innerHTML = "xx.xx.2020";
+    } else {
+    }
+
+    // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
+    var el = document.getElementById('task20');
+    if (el != null) {
+        document.getElementById("task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
+    } else {
+    }
+
+    //Update complete schedule manually in index.html
 }
+
 
 $(document).ready(function () {
-    $(":checkbox").on("change", function () {
-        updateButtonStatus();
-        updateCookie();
+    'use strict';
+    // Set up search
+    var index, store;
+    $.getJSON('/lunr.json', function (response) {
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#search').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var result = index.search(query);
+            // Output it
+            var resultdiv = $('ul.searchresults');
+            if (result.length === 0) {
+                // Hide results
+                resultdiv.hide();
+            } else {
+                // Show results
+                resultdiv.empty();
+                for (var item in result) {
+                    var ref = result[item].ref;
+                    var searchitem = '<li><a href="' + ref + '">' + store[ref].title + '</a></li>';
+                    resultdiv.append(searchitem);
+                }
+                resultdiv.show();
+            }
+        });
     });
+});
 
-    $("button").on("click", function () {
-        handleButtonClick(this);
-        updateCookie();
-    });
+function theme() {
+    const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
-    $.cookie.json = true;
-    repopulateFormELements();
+    toggleSwitch.addEventListener('change', switchTheme, false);
 
-})
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark'); //add this
+            document.getElementById("theme").innerHTML="";
+            document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
+        } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light'); //add this
+            document.getElementById("theme").innerHTML="";
+            document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
+        }
+    }
 
-*/
+    const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+    if (currentTheme) {
+        document.documentElement.setAttribute('data-theme', currentTheme);
+
+        if (currentTheme === 'dark') {
+            toggleSwitch.checked = true;
+            document.getElementById("theme").innerHTML="";
+            document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
+        } else {
+            document.getElementById("theme").innerHTML="";
+            document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
+        }
+
+    }
+
+}
+
+function checkmarks() {
+    var toggleSwitch = document.querySelectorAll('.checks input[type="checkbox"]');
+
+    toggleSwitch.addEventListener('change', switchCheck, false);
+
+    function switchCheck(e) {
+        if (e.target.checked) {
+            document.documentElement.setAttribute('checkmark', 'is-checked');
+            localStorage.setItem('checkmark', 'is-checked'); //add this
+
+        } else {
+            document.documentElement.setAttribute('checkmark', 'is-not-checked');
+            localStorage.setItem('checkmark', 'is-not-checked'); //add this
+        }
+    }
+
+    for (i = 0; i < toggleSwitch.length; i++) {
+        console.log(toggleSwitch[i]);
+        var currentCheck = localStorage.getItem('checkmark') ? localStorage.getItem('checkmark') : null;
+
+        if (currentCheck) {
+            document.documentElement.setAttribute('checkmark', currentCheck);
+            console.log(toggleSwitch[i]);
+
+            if (currentCheck === 'is-checked') {
+                toggleSwitch[i].checked = true;
+            }
+
+        }
+    }
 
 
 
+
+
+
+
+
+}

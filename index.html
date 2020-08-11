@@ -4,20 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-site-verification" content="a-T4itwPFKWMD5APZ8Kdr_A16BNBLCehy5V0NaJfao8" />
     <title>IPP</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
-    <script src="js/search.js"></script>
+    <script src="js/lunr.js"></script>
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body onload="accordion(); variables()">
+<body onload="accordion(); variables(); theme(); checkmarks();">
 
     <div class="columns is-fullheight">
         <div class="column is-1">
@@ -33,10 +32,138 @@
 
                 <!-- Iterations -->
                <h1 class="title is-4">Iterations</h1>
-                <img id="spiral" src="img/orga-spiral.jpg" usemap="#image-map">
-                <map name="image-map">
-                    <area href="https://fontawesome.com/v4.7.0/icons/" coords="30,100,0,400" shape="rect">
-                </map>
+
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1400 1400" >
+                    <image width="1400" height="1400" xlink:href="img/orga-spiral.svg">
+                    </image>
+
+                    <!-- Center:Prep -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/general/grading.html">
+                        <circle cx="735" cy="680" r="100" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Analysis -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M1_research.html">
+                        <circle cx="635" cy="555" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M2_goals.html">
+                        <circle cx="555" cy="475" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M3_frameworks.html">
+                        <circle cx="475" cy="405" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M4_reflections.html">
+                        <circle cx="410" cy="320" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Design -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M1_first_sketch.html">
+                        <circle cx="845" cy="555" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M2_from_LoFi_to_HiFi.html">
+                        <circle cx="925" cy="475" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M3_style_prototype.html">
+                        <circle cx="1000" cy="390" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M4_improving_interactions.html">
+                        <circle cx="1080" cy="320" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Implementation -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M1_paper.html">
+                        <circle cx="880" cy="820" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M2_hifiPrototyping.html">
+                        <circle cx="950" cy="895" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M3_lofiWeb.html">
+                        <circle cx="1030" cy="980" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M4_hifiWeb.html">
+                        <circle cx="1100" cy="1040" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Evaluation -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M1_thinking.html">
+                        <circle cx="535" cy="840" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M2_heuristic.html">
+                        <circle cx="465" cy="910" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M3_qualitative.html">
+                        <circle cx="395" cy="995" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M4_quantitative.html">
+                        <circle cx="310" cy="1075" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Milestones -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M1_presentation.html">
+                        <circle cx="470" cy="660" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M2_presentation.html">
+                        <circle cx="350" cy="660" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M3_presentation.html">
+                        <circle cx="250" cy="660" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M4_presentation.html">
+                        <circle cx="150" cy="660" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Final -->
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M5_evaluation.html">
+                        <circle cx="130" cy="400" r="50" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/tasks/M5_presentation.html">
+                        <circle cx="150" cy="120" r="100" fill="green" opacity="0" width="150" height="750" />
+                    </a>
+
+                    <!-- Theory -->
+                    <g transform = "rotate(45 60 60)">
+                        <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/theory/analysis.html">
+                            <rect x="360" y="-200" fill="green" opacity="0" width="70" height="380"/>
+                        </a>
+                    </g>
+
+                    <g transform = "rotate(135 60 60)">
+                        <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/theory/design.html">
+                            <rect x="-600" y="-1000" fill="green" opacity="0" width="70" height="380"/>
+                        </a>
+                    </g>
+
+                    <g transform = "rotate(45 60 60)">
+                        <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/theory/implementation.html">
+                            <rect x="1560" y="-200" fill="green" opacity="0" width="200" height="480"/>
+                        </a>
+                    </g>
+
+                    <g transform = "rotate(135 60 60)">
+                        <a xlink:href="https://interactionprototyping.github.io/exercises_2.0/pages/theory/evaluation.html">
+                            <rect x="660" y="-1000" fill="green" opacity="0" width="70" height="380"/>
+                        </a>
+                    </g>
+
+                </svg>
+
+
             </section>
 
             <!-- Schedule -->
@@ -86,26 +213,42 @@
                 </div>
                 <span id="next_page">Next: Grading and expectations</span>
 
-            <div id="tasks">
-                <br/>
-                <p class="menu-label">Tasks iteration 1</p>
-                <div>
-                    <input type="checkbox" id="task1" autocomplete="on">
-                    <label for="task1">Qualitative evaluation</label>
+                <div id="tasks">
+                    <br/>
+                    <p class="menu-label">Tasks iteration 1</p>
+                    <div>
+
+                        <label class="checks" for="task1">
+                            <input class="" type="checkbox" id="task1">
+                            Qualitative evaluation
+                        </label>
+                    </div>
+                    <div>
+                        <label class="checks" for="task2">
+                            <input class="" type="checkbox" id="task2">
+                            Personas
+                        </label>
+                    </div>
+                    <div>
+                        <label class="checks" for="task3">
+                            <input class="" type="checkbox" id="task3">
+                            Screen images
+                        </label>
+                    </div>
+                    <div>
+                        <label class="checks" for="task4">
+                            <input class="" type="checkbox" id="task4">
+                            Usability report
+                        </label>
+                    </div>
                 </div>
-                <div>
-                    <input type="checkbox" id="task2">
-                    <label for="task2">Personas</label>
+                <div class="theme-switch-wrapper">
+                    <div id="theme"></div>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
                 </div>
-                <div>
-                    <input type="checkbox" id="task3">
-                    <label for="task3">Screen images</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="task4">
-                    <label for="task4">Usability report</label>
-                </div>
-            </div>
             </div>
         </div>
 
@@ -124,6 +267,7 @@
 </body>
 </html>
 
+
 <script>
     includeHTML();
 </script>
@@ -133,23 +277,22 @@
 <!--
 
 Task bundle 1
-#TODO: WIP Get search to work (https://davidwalsh.name/adding-search-to-your-site-with-javascript)
-#TODO: Test on computer: Tasks on right
-#TODO: Test on computer: Arrow to navigate top right
-#TODO: Test On computer: margins
-
+#TODO: Test on computer: Margins, Tasks on right, Arrow to navigate top right, Checkmarks for progress, themes
 
 Task bundle 2
-#TODO: Checkmarks for progress
-#TODO: Spiral change font and make interactive
-#TODO: Light theme with SaaS?
+#TODO: Framework content on website
+#TODO: Content new (evaluation/design)
+#TODO: Spiral und schedule light version, schedule höhere Schriftgröße
+#TODO: Skript
 
+Task bundle 3
+#TODO: WIP 404 page
+#TODO: WIP Get search to work with Lunr (https://davidwalsh.name/adding-search-to-your-site-with-javascript)
 
 Nice to have
 #TODO: Re-check color combinations 3:1 contrast
 #TODO: Link slides as pdf?
 #TODO: Arrow different direction if accordion open
 #TODO: Quicklink to current iteration (with current tasks)
-#TODO: Feedback field
 
 -->

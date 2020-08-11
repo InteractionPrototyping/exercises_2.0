@@ -94,18 +94,21 @@
         <h1 class="title is-6">Interaction Prototyping</h1>
     </div>
 
-    <form action="https://www.google.com/search" id="form-search">
-        <label for="input-search">Enter your search criteria:</label>
-        <input type="text" name="q" id="input-search" value=" site:your-domain.com">
-        <button id="submit-search">Search</button>
-    </form>
-        <!-- Test 1
+
+
+    <div class="field has-addons">
         <div class="control">
-            <button type="submit" class="button is-info" id="search">
-                <i class="fa fa-search"></i>
-            </button>
+            <form action="/search/" method="GET">
+                <div>
+                    <input id="search_field" required type="search" class="input" placeholder="Search">
+                    <button type="submit" class="button is-info" id="search">
+                    <i class=" fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
         </div>
-        -->
+    </div>
+
         <!-- Test 2
         <div class="field has-addons">
         <div class="control">
