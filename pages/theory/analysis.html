@@ -15,14 +15,18 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
-<body onload="accordion(); variables()">
+<body onload="accordion(); variables(); theme(); checkmarks();">
+
 <div class="columns is-fullheight">
 
-    <div class="column is-one-quarter is-sidebar-menu">
+    <div class="column is-2 fill">
+    </div>
+
+    <div class="column is-2 is-sidebar-menu">
         <div w3-include-html="../shared/sidebar.html"></div>
     </div>
 
-    <div class="column" id="content">
+    <div class="column is-5" id="content">
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
         <section>
             <h1 class="title">Analysis</h1>
@@ -45,15 +49,40 @@
             <p>Mental models can be discovered by interviewing potential users applying the Thinking-Aloud technique, as you will do for an <a href="/exercises_2.0/pages/tasks/M1_research.html"> assignment in iteration 1</a>.
 
         </section>
+        <section>
         <div class="box_reading">
             <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
             <p><a href="https://www.cooper.com/journal/2014/04/inside-goal-directed-design-a-two-part-conversation-with-alan-cooper/">"Inside Goal-Directed Design: A Two-Part Conversation With Alan Cooper" </a> by Caroline Kraus, interview</p>
             <p><a href="https://www.nngroup.com/articles/mental-models/">"Mental Models"</a> by Jakob Nielsen, online article</p>
             <p><a href="https://simplicable.com/new/context-of-use">"6 Examples of Context of Use"</a> by John Spacey, online article</p>
         </div>
-        <div class="container_footer" w3-include-html="../shared/footer.html"></div>
+        </section>
     </div>
-</div>
+
+    <div class="column is-2" id="navigation">
+        <div class="level">
+            <div class="level-item">
+                <button class="navigation_button" onclick="window.location.href='../general/set_up_development.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+                <button class="navigation_button" onclick="window.location.href='design.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <span id="next_page">Next: Design</span>
+
+
+        <div class="theme-switch-wrapper">
+            <div id="theme"><i class='fas fa-sun'></i></div>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="column is-3">
+    </div>
+
+    </div>
+    <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
 </body>
 </html>
 <script>
