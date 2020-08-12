@@ -58,11 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Get the target from the "data-target" attribute
                 const menu = document.getElementById("burger_menu");
                 const content = document.getElementById("content");
+                const navigation = document.getElementById("navigation");
+                const footer = document.getElementById("footer");
 
                 // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                 el.classList.toggle('is-active');
                 menu.classList.toggle('is-hidden');
                 content.classList.toggle('is-hidden');
+                navigation.classList.toggle('is-hidden');
+                footer.classList.toggle('is-hidden');
             });
         });
     }

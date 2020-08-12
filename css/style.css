@@ -41,6 +41,12 @@
         text-align: center;
     }
 
+
+
+    .fill {
+        display:none!important;
+    }
+
 }
 
 /*Simple css to style it like a toggle switch*/
@@ -120,7 +126,7 @@ html {
     background-color: var(--bg-color)!important;
 }
 
-body, aside, h1, h2, h3, ul, li, aside a, strong {
+body, aside, h1, h2, h3, ul, li, aside a, strong, li a {
     color:var(--text-color-primary)!important;
 }
 
@@ -143,6 +149,7 @@ aside {
     position:fixed;
     overflow:auto;
     z-index: 0;
+    width:15%;
     /*box-shadow: 1px 19px 10px lightgrey;*/
 }
 
