@@ -202,11 +202,20 @@ function theme() {
             localStorage.setItem('theme', 'dark'); //add this
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
+
+            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light'); //add this
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
+
+            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
         }
     }
 
@@ -219,9 +228,18 @@ function theme() {
             toggleSwitch.checked = true;
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
+
+            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+
         } else {
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
+
+            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
         }
 
     }
