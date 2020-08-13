@@ -124,6 +124,7 @@ function variables() {
     }
     document.title = "Interaction Prototyping: " + term;
     document.getElementById("term").innerHTML = term;
+    document.getElementById("copyright").innerHTML= year;
 
     //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
     var el = document.getElementById('name_person');
@@ -237,9 +238,6 @@ function theme() {
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
 
-            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
-            document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
-            document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
         }
 
     }
