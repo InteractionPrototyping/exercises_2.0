@@ -71,6 +71,10 @@
 
 }
 
+text:hover {
+    transform: scale(2,1);
+}
+
 /*Simple css to style it like a toggle switch*/
 .theme-switch-wrapper {
     display: flex;
