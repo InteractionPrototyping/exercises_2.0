@@ -134,23 +134,23 @@ function variables() {
     }
 
     // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
-    var el = document.getElementById('task8');
+    var el = document.getElementById('deadline_task8');
     if (el != null) {
-        document.getElementById("task8").innerHTML = "xx.xx.2020";
+        document.getElementById("deadline_task8").innerHTML = "xx.xx.2020";
     } else {
     }
 
     // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
-    var el = document.getElementById('task9');
+    var el = document.getElementById('deadline_task9');
     if (el != null) {
-        document.getElementById("task9").innerHTML = "xx.xx.2020";
+        document.getElementById("deadline_task9").innerHTML = "xx.xx.2020";
     } else {
     }
 
     // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
-    var el = document.getElementById('task20');
+    var el = document.getElementById('deadline_task20');
     if (el != null) {
-        document.getElementById("task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
+        document.getElementById("deadline_task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
     } else {
     }
 
@@ -245,6 +245,30 @@ function theme() {
 }
 
 function checkmarks() {
+    console.log("load");
+    for (i = 1; i < 24; i++) {
+
+        if(document.getElementById("task"+i) != null) {
+            if (localStorage.getItem('task' + i) === "checked") {
+                document.getElementById("task" + i).checked = true;
+                console.log("task" + i);
+            }
+        }
+    }
+}
+
+function checkmarks_save(id) {
+    if (localStorage.getItem('task'+id) === "checked") {
+        var checkbox = document.getElementById("task" + id);
+        localStorage.setItem("task" + id, "unchecked");
+    } else {
+        var checkbox = document.getElementById("task" + id);
+        localStorage.setItem("task" + id, "checked");
+        console.log("task" + id);
+    }
+}
+
+/*
     var toggleSwitch = document.querySelectorAll('.checks input[type="checkbox"]');
 
     toggleSwitch.addEventListener('change', switchCheck, false);
@@ -274,12 +298,6 @@ function checkmarks() {
 
         }
     }
-
-
-
-
-
-
-
-
 }
+*/
+
