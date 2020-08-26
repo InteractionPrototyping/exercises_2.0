@@ -14,6 +14,7 @@
     --secondary-color-blue: #148EFF;
     --secondary-color-purple: #8e7cc3;
     --secondary-color-green: #609A47;
+    --red: #ff1414;
 
     --border-color: #F2F2F2;
 }
@@ -34,7 +35,7 @@
 /*    --secondary-color-blue: #96ceff;*/
     --secondary-color-blue: #A8D5FF;
     --secondary-color-purple: #D1CEE4;
-    --secondary-color-green: #F7FAF4;
+    --secondary-color-green: #e8fcd4;
 
     --border-color:#6b6b6b;
 }
@@ -157,6 +158,10 @@ html {
 
 body {
     height: 100%;
+}
+
+h1 {
+    margin-bottom:1em!important;
 }
 
 body, aside, h1, h2, h3, ul, li, aside a, strong, li a {
@@ -420,6 +425,42 @@ footer {
 columns {
     width:100vw;
 }
+
+.advantages svg{
+    color: var(--secondary-color-green);
+    display: flex;
+    margin:auto;
+}
+
+.disadvantages svg {
+    color: var(--red);
+    display: flex;
+    margin:auto;
+}
+
+.disadvantages {
+    margin-top:1em;
+    padding:1em;
+    border:1px solid var(--red);
+}
+
+.advantages {
+    margin-top:1em;
+    padding:1em;
+    border:1px solid var(--secondary-color-green);
+}
+
+.example_app {
+    max-height: 70vh;
+    display: flex;
+    margin:auto;
+    margin-bottom:1em;
+}
+
+.example_app_text {
+    text-align: center;
+}
+
 
 #navigation {
     position: sticky;
