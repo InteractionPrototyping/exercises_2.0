@@ -88,7 +88,6 @@ em {
         font-size: 1rem;
     }
 
-
 .theme-switch {
     display: inline-block;
     height: 25px;
@@ -464,6 +463,7 @@ columns {
 .colored_links {
     color:var(--secondary-color-blue)!important;
 }
+
 
 #navigation {
     position: sticky;
