@@ -461,6 +461,9 @@ columns {
     text-align: center;
 }
 
+.colored_links {
+    color:var(--secondary-color-blue)!important;
+}
 
 #navigation {
     position: sticky;
