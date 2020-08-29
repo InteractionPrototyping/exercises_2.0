@@ -163,7 +163,7 @@ h1 {
     margin-bottom:1em!important;
 }
 
-body, aside, h1, h2, h3, ul, li, aside a, strong, li a {
+body, aside, h1, h2, h3, ul, li, aside a, strong{
     color:var(--text-color-primary)!important;
 }
 
