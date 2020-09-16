@@ -413,8 +413,17 @@ footer {
     padding:1em 2em;
 }
 
-.navigation_button:hover {
+.navigation_button:hover, .nav_button_404:hover {
     cursor:pointer;
+}
+
+.nav_button_404 {
+  background-color: var(--bg-color);
+  border:0.5px solid var(--primary-color);
+  padding:1em 1.5em;
+  color:var(--primary-color);
+  margin:0 auto;
+  display:flex;
 }
 
 .column {
@@ -462,6 +471,10 @@ columns {
 
 .colored_links {
     color:var(--secondary-color-blue)!important;
+}
+
+.centered_text {
+  text-align: center;
 }
 
 
@@ -534,5 +547,3 @@ columns {
     margin:10px;
     font-size:21px;
 }
-
-
