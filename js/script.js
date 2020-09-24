@@ -31,6 +31,20 @@ function accordion () {
     }
 }
 
+function activeSection() {
+    const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
+    let currentURL = window.location.href;
+    $sections.forEach(el => {
+        if (el.href === currentURL) {
+            el.classList.toggle('is-active');
+            //console.log(el.parentElement.parentElement.previousElementSibling);
+            if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
+                el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
+            }
+        }
+    })
+}
+
 function removeActive () {
     for (j = 0; j < acc2.length; j++) {
         var panel2 = acc2[j].nextElementSibling;
@@ -96,19 +110,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-function activeSection() {
-    const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
-    let currentURL = window.location.href;
-    $sections.forEach(el => {
-        if (el.href === currentURL) {
-            el.classList.toggle('is-active');
-            //console.log(el.parentElement.parentElement.previousElementSibling);
-            if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
-                el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
-            }
-        }
-    })
-}
+
 
 function variables() {
 

@@ -26,6 +26,7 @@ function includeHTML() {
         }
     }
     variables();
-    theme(); 
+    theme();
+    accordion();
 
 }
