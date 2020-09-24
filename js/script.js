@@ -83,7 +83,7 @@ function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton = document.getElementById("myBtn");
         mybutton.style.display = "block";
-        console.log(mybutton);
+      //  console.log(mybutton);
     } else {
         mybutton = document.getElementById("myBtn");
         mybutton.style.display = "none";
@@ -126,6 +126,7 @@ function variables() {
     document.getElementById("term").innerHTML = term;
     document.getElementById("copyright").innerHTML= year;
 
+
     //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
     var el = document.getElementById('name_person');
     if (el != null) {
@@ -154,10 +155,12 @@ function variables() {
     } else {
     }
 
+
+
     //Update complete schedule manually in index.html
 }
 
-
+/*
 $(document).ready(function () {
     'use strict';
     // Set up search
@@ -191,6 +194,7 @@ $(document).ready(function () {
         });
     });
 });
+*/
 
 function theme() {
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
@@ -204,11 +208,20 @@ function theme() {
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
 
-            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
             document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
             document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
-            document.getElementById("schedule2020").innerHTML="<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
-            document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
+
+            if (document.getElementById('logo_tum_mobile') != null) {
+                document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            }
+
+            if (document.getElementById('schedule2020') != null) {
+                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            }
+
+            if (document.getElementById('spiral_picture') != null) {
+                document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
+            }
 
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
@@ -216,11 +229,20 @@ function theme() {
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-sun'></i>";
 
-            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum.svg\"/>";
-            document.getElementById("schedule2020").innerHTML="<img src=\"/exercises_2.0/img/schedule2020.svg\"/>";
-            document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new.svg');
+
+            if (document.getElementById('logo_tum_mobile') != null) {
+                document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
+            }
+
+            if (document.getElementById('schedule2020') != null) {
+                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/schedule2020.svg\"/>";
+            }
+
+            if (document.getElementById('spiral_picture') != null) {
+                document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new.svg');
+            }
 
         }
     }
@@ -235,11 +257,21 @@ function theme() {
             document.getElementById("theme").innerHTML="";
             document.getElementById("theme").innerHTML="<i class='fas fa-moon'></i>";
 
-            document.getElementById("logo_tum_mobile").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
             document.getElementById("logo_tum").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
             document.getElementById("logo_tum_footer").innerHTML="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
-            document.getElementById("schedule2020").innerHTML="<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
-            document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
+
+            if (document.getElementById('logo_tum_mobile') != null) {
+                document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+            }
+
+
+            if (document.getElementById('schedule2020') != null) {
+                document.getElementById("schedule2020").innerHTML ="<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
+            }
+
+            if (document.getElementById('spiral_picture') != null) {
+                document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
+            }
 
         } else {
             document.getElementById("theme").innerHTML="";
@@ -307,4 +339,3 @@ function checkmarks_save(id) {
     }
 }
 */
-

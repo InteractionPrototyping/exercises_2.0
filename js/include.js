@@ -21,8 +21,11 @@ function includeHTML() {
             }
             xhttp.open("GET", file, true);
             xhttp.send();
-            /* Exit the function: */
+             /* Exit the function: */
             return;
         }
     }
+    variables();
+    theme(); 
+
 }
