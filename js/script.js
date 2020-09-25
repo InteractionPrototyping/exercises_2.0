@@ -218,7 +218,7 @@ function theme() {
             }
 
             if (document.getElementById('schedule2020') != null) {
-                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/tum_dark.png\"/>";
+                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
             }
 
             if (document.getElementById('spiral_picture') != null) {
