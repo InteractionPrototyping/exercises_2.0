@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="icon" type="image/svg" href="img/tum.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/lunr.js"></script>
+    <script src="js/search.js"></script>
+
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body onload="checkmarks();">
+
+    <div class="columns is-fullheight">
+          <div class="column is-2 fill">
+
+          </div>
+
+          <div class="column is-2 is-sidebar-menu">
+              <div w3-include-html="pages/shared/sidebar.html"></div>
+          </div>
+          <div class="column is-5" id="content">
+              <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+                 <h1 class="title is-4">Search results</h1>
+
+                 <form action="/exercises_2.0/search.html" method="get">
+                   <label for="search-box">Search</label>
+                   <input type="text" id="search-box" name="query">
+                   <input type="submit" value="search">
+                 </form>
+                 
+                 <ul id="search-results"></ul>
+
+          </div>
+
+         <div class="column is-2" id="navigation">
+           <div class="theme-switch-wrapper">
+               <div id="theme"><i class='fas fa-sun'></i></div>
+               <label class="theme-switch" for="checkbox">
+                   <input type="checkbox" id="checkbox" />
+                   <div class="slider round"></div>
+               </label>
+           </div>
+         </div>
+
+         <div class="column is-3">
+         </div>
+
+
+    </div>
+
+    <div class="container_footer" w3-include-html="pages/shared/footer.html" id="footer"></div>
+</body>
+</html>
+
+
+ <script>
+     includeHTML();
+   </script>
+   <script>
+      window.store = {
+        {% for post in site.posts %}
+          "{{ post.url | slugify }}": {
+            "title": "{{ post.title | xml_escape }}",
+            "author": "{{ post.author | xml_escape }}",
+            "category": "{{ post.category | xml_escape }}",
+            "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+            "url": "{{ post.url | xml_escape }}"
+          }
+          {% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      };
+ </script>
