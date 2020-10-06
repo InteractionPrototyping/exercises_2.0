@@ -55,38 +55,39 @@ function removeActive () {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
+                console.log("navbar burger length:"+$navbarBurgers.length);
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+            console.log("click");
+            // Add a click event on each of them
+            $navbarBurgers.forEach( el => {
+                el.addEventListener('click', () => {
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach( el => {
-            el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const menu = document.getElementById("burger_menu");
+                    const content = document.getElementById("content");
+                    const navigation = document.getElementById("navigation");
+                    const footer = document.getElementById("footer");
 
-                // Get the target from the "data-target" attribute
-                const menu = document.getElementById("burger_menu");
-                const content = document.getElementById("content");
-                const navigation = document.getElementById("navigation");
-                const footer = document.getElementById("footer");
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                menu.classList.toggle('is-hidden');
-                content.classList.toggle('is-hidden');
-                navigation.classList.toggle('is-hidden');
-                footer.classList.toggle('is-hidden');
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    menu.classList.toggle('is-hidden');
+                    content.classList.toggle('is-hidden');
+                    navigation.classList.toggle('is-hidden');
+                    footer.classList.toggle('is-hidden');
+                });
             });
-        });
-    }
+        }
 
 
-});
+    });
+
 
 
 

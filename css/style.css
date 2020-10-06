@@ -175,6 +175,10 @@ a {
     color:var(--secondary-color-blue)!important;
 }
 
+.mobile_sidebar {
+  color:var(--text-color-primary)!important;
+}
+
 
 section {
     margin-bottom:5%;
