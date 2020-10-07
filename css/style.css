@@ -163,6 +163,10 @@ h1 {
     margin-bottom:1em!important;
 }
 
+h3 {
+  font-weight: bold!important;
+}
+
 body, aside, h1, h2, h3, ul, li, aside a, strong{
     color:var(--text-color-primary)!important;
 }

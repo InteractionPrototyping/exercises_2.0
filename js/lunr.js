@@ -1,3 +1,5 @@
+/**
+
 Skip to content
 Search or jump to…
 
@@ -31,7 +33,7 @@ Latest commit aa5a878 on Aug 19
  1 contributor
 3475 lines (3020 sloc)  97.5 KB
 
-/**
+
  * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 2.3.9
  * Copyright (C) 2020 Oliver Nightingale
  * @license MIT
