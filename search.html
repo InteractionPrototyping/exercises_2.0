@@ -15,12 +15,12 @@
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
     <script src="js/lunr.js"></script>
-    <script src="js/search.js"></script>
+
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
-<body onload="checkmarks();">
+<body>
 
     <div class="columns is-fullheight">
           <div class="column is-2 fill">
@@ -28,7 +28,7 @@
           </div>
 
           <div class="column is-2 is-sidebar-menu">
-              <div w3-include-html="pages/shared/sidebar.html"></div>
+<!--              <div w3-include-html="pages/shared/sidebar.html"></div> -->
           </div>
           <div class="column is-5" id="content">
               <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
@@ -39,7 +39,7 @@
                    <input type="text" id="search-box" name="query">
                    <input type="submit" value="search">
                  </form>
-                 
+
                  <ul id="search-results"></ul>
 
           </div>
@@ -70,15 +70,16 @@
    </script>
    <script>
       window.store = {
-        {% for post in site.posts %}
-          "{{ post.url | slugify }}": {
-            "title": "{{ post.title | xml_escape }}",
-            "author": "{{ post.author | xml_escape }}",
-            "category": "{{ post.category | xml_escape }}",
-            "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-            "url": "{{ post.url | xml_escape }}"
-          }
-          {% unless forloop.last %},{% endunless %}
-        {% endfor %}
+        "pages/tasks/M1_research.html": {
+            "title": "Research and interviews",
+            "content": "Research and interviews Interview methods",
+            "url": "pages/tasks/M1_research.html"
+        },
+        "pages/tasks/M1_paper.html": {
+            "title": "Paper Prototypes",
+            "content": "Using Nielsen's (2012) Usability 101, create sketched early stage vertical prototypes on paper of (more than five) different views of your interactive application that address your analysis and design stages. interviews",
+            "url": "pages/tasks/M1_paper.html"
+        }
       };
  </script>
+    <script src="js/search.js"></script>
