@@ -1,3 +1,4 @@
+var fs = require('fs');
 
 
 
@@ -59,8 +60,17 @@ function generate_index() {
     // jsonArr.entries[i] = {};
     jsonArr[array_url[i]] = {};
     jsonArr[array_url[i]].url = array_url[i];
-    jsonArr[array_url[i]].title = "todo";
-    jsonArr[array_url[i]].content = "todo";
+
+
+    try {
+      fs.readFile('demofile1.html', (err, data) => {
+      console.log('successfully deleted /tmp/hello');
+    } catch (err) {
+      // handle the error
+      fs.readFile('demofile1.html', (err, data) => {
+    }
+      console.log(data);
+    });
     // open html file
     // html strip: let strippedString = originalString.replace(/(<([^>]+)>)/gi, "");
     // add to JSON object (title,content,url)
