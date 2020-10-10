@@ -15,8 +15,6 @@
     <script src="js/script.js"></script>
     <script src="js/include.js"></script>
     <script src="js/lunr.js"></script>
-    <script src="js/search_index.js"></script>
-
 
     <script src="https://unpkg.com/lunr/lunr.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -24,13 +22,12 @@
 <body>
 
     <div class="columns is-fullheight">
-          <div class="column is-2 fill">
-
-          </div>
+          <div class="column is-2 fill"></div>
 
           <div class="column is-2 is-sidebar-menu">
-<!--              <div w3-include-html="pages/shared/sidebar.html"></div> -->
+             <div w3-include-html="pages/shared/sidebar.html"></div>
           </div>
+          
           <div class="column is-5" id="content">
               <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
                  <h1 class="title is-4">Search results</h1>
@@ -47,7 +44,7 @@
 
          <div class="column is-2" id="navigation">
            <div class="theme-switch-wrapper">
-               <div id="theme"><i class='fas fa-sun'></i></div>
+               <div id="theme"><i class="fas fa-sun"></i></div>
                <label class="theme-switch" for="checkbox">
                    <input type="checkbox" id="checkbox" />
                    <div class="slider round"></div>
@@ -66,22 +63,8 @@
 </html>
 
 
- <script>
+<script>
      includeHTML();
-   </script>
-   <script>
-
-      window.store = {
-        "pages/tasks/M1_research.html": {
-            "title": "Research and interviews",
-            "content": "Research and interviews Interview methods",
-            "url": "pages/tasks/M1_research.html"
-        },
-        "pages/tasks/M1_paper.html": {
-            "title": "Paper Prototypes",
-            "content": "Using Nielsen's (2012) Usability 101, create sketched early stage vertical prototypes on paper of (more than five) different views of your interactive application that address your analysis and design stages. interviews",
-            "url": "pages/tasks/M1_paper.html"
-        }
-      };
- </script>
-    <script src="js/search.js"></script>
+</script>
+<script src="js/search_index.js"></script>
+<script src="js/search.js"></script>
