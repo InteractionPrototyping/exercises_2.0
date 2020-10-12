@@ -244,7 +244,7 @@ function theme() {
             }
 
             if (document.getElementById('spiral_picture') != null) {
-                document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new.svg');
+                document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-backup.svg');
             }
 
         }
