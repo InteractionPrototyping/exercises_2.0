@@ -218,8 +218,10 @@ function theme() {
                 document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             }
 
-            if (document.getElementById('schedule2020') != null) {
-                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
+            if (document.getElementsByClassName('schedule2020') != null) {
+                document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1_dark.png\"/>";
+                document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2_dark.png\"/>";
+                document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3_dark.png\"/>";
             }
 
             if (document.getElementById('spiral_picture') != null) {
@@ -239,8 +241,10 @@ function theme() {
                 document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             }
 
-            if (document.getElementById('schedule2020') != null) {
-                document.getElementById("schedule2020").innerHTML = "<img src=\"/exercises_2.0/img/schedule2020.svg\"/>";
+            if (document.getElementsByClassName('schedule2020') != null) {
+              document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1.png\"/>";
+              document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2.png\"/>";
+              document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3.png\"/>";
             }
 
             if (document.getElementById('spiral_picture') != null) {
@@ -268,8 +272,10 @@ function theme() {
             }
 
 
-            if (document.getElementById('schedule2020') != null) {
-                document.getElementById("schedule2020").innerHTML ="<img src=\"/exercises_2.0/img/schedule2020dark.svg\"/>";
+            if (document.getElementsByClassName('schedule2020') != null) {
+                document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1_dark.png\"/>";
+                document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2_dark.png\"/>";
+                document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3_dark.png\"/>";
             }
 
             if (document.getElementById('spiral_picture') != null) {
