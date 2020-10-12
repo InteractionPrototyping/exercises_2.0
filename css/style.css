@@ -234,6 +234,7 @@ footer {
     background-color: var(--bg-color-footer)!important;
 }
 
+
 .columns {
     min-height: 100%;
     /* equal to footer height */
@@ -525,9 +526,25 @@ columns {
 }
 
 #search {
-    background-color: var(--primary-color);
+    background:url('../img/search-solid.svg'), var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:10px;
+    width:20%;
 }
 
+.search {
+  background:var(--primary-color)!important;
+  border:none!important;
+}
+
+#search-results {
+  margin-top:2em;
+}
+
+#search-results li{
+  margin:1em 0;
+}
 
 #spiral {
     max-height:90vh;

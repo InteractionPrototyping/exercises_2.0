@@ -103,15 +103,18 @@
     </div>
 
 
-    <div class="field has-addons">
-        <div class="control">
-            <form action="/exercises_2.0/search.html" method="get">
-              <label for="search-box">Search</label>
-              <input type="text" id="search-box" name="query">
-              <input type="submit" value="search">
-            </form>
-        </div>
-    </div>
+    <form action="/exercises_2.0/search.html" method="get">
+       <div class="field has-addons">
+         <div class="control">
+           <input type="text" id="search-box" name="query" class="input">
+         </div>
+         <div class="control">
+           <a class="button search">
+           <input type="submit" id="search" value="" class="button is-info">
+           </a>
+         </div>
+       </div>
+    </form>
 
             <!--<form action="/search/" method="GET">
                 <div>
