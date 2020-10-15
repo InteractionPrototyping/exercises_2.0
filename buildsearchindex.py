@@ -5,7 +5,7 @@ import json
 #URL/NAME
 filenames = ["index.html",
 "pages/general/grading.html",
-"pages/general/ideas.html",
+"pages/tasks/ideas.html",
 "pages/general/set_up_client.html",
 "pages/general/set_up_commands.html",
 "pages/general/set_up_development.html",
@@ -52,11 +52,11 @@ def buildjson(filename):
         contentfull=''
         for line in content:
             contentfull=contentfull+line
-        
-        #CONTENT (CLEAN), strip html and whitespaces 
+
+        #CONTENT (CLEAN), strip html and whitespaces
         cleancontent = cleanhtml(contentfull)
         cleancontent = " ".join(re.split("\s+", cleancontent, flags=re.UNICODE))
-    
+
         #TITLE
         soup = BeautifulSoup(contentfull, 'html.parser')
         title = soup.h1.string
@@ -65,16 +65,13 @@ def buildjson(filename):
         data[filename]={}
         data[filename]['url'] = filename
         data[filename]['title'] = title
-        data[filename]['content'] = cleancontent       
+        data[filename]['content'] = cleancontent
 
 for file in filenames:
     buildjson(file)
-    
+
 #Exporting json to new file
 print("Writing to outfile: "+outfile_path)
 with open(outfile_path, 'w') as outfile:
     outfile.write("window.store = ")
     json.dump(data, outfile)
-
-
-    

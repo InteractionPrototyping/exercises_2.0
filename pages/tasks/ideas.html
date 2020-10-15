@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../../js/include.js"></script>
+    <script src="../../js/script.js"></script>
+    <script src="../../js/lunr.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPP</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/svg" href="../../img/tum.svg">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="checkmarks();">
+
+<div class="columns is-fullheight">
+    <div class="column is-2 fill">
+
+    </div>
+
+    <div class="column is-2 is-sidebar-menu">
+        <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+    <div class="column is-5" id="content">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+        <section>
+            <h1 class="title">Brainstorm ideas for an interactive mobile application</h1>
+            <div>
+                <h1 class="title is-4">An exemplary procedure</h1>
+                <p>Make a Mind Map of ideas for an interactive mobile application. By interactive, stress is on the interaction between the application and the user, rather than on the application functionality. Think of new and innovative ways how a mobile application can be used, write these down and create a Mind Map. Either make a hand drawn (take a photo) or a software based (see below) Mind Map.</p>
+                <p>The primary objective of this mind mapping process is to come up with a application prototype that has both features and functionality. More information regarding features and functionality can be found in Section 2.1 of Nielsen's Guerrilla HCI . As you will see, features are referred to as the horizontal component of prototyping and functionality is the vertical component. The goal of this course is for you to have a broad understanding of the horizontal features (viz. interaction) and to, by the end of the course, have implemented a limited set of the vertical functionality (also, interaction).</p><br/>
+            </div>
+            <div>
+                <h1 class="title is-4">Generate ideas and select the best ones</h1>
+                <p>According to the creative problem solving process (and general brainstorming rules), strictly separate the two phases convergent (idea generation) and divergent (idea evaluation) thinking. Divergent thinking means a "broad search for many diverse and novel alternatives". Convergent thinking means a "focused and affirmative evaluation of alternatives". Separating those phases ensures, that you explore the topic broadly, consider all relevant factors, and find new alternatives.</p>
+            </div>
+
+            <div class="box_reading">
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+                <p><a href="https://www.nngroup.com/articles/guerrilla-hci/">Guerrilla HCI</a> by Jakob Nielsen, online article </p>
+                <p><a href="https://en.wikipedia.org/wiki/Brainstorming">Brainstorming</a> from Wikipedia </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p>Basic rules for <b>divergent</b> thinking are:</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Defer judgement</h2>
+                <p>Avoid any form (positive or negative), even thought, and defer to convergent phase.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Strive for quantity</h2>
+                <p>Generate many options to get the chance of finding good options. Whether an option is good or bad is judgment and therefore deferred.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Seek wild ideas</h2>
+                <p>“Wild and crazy” or “childish” ideas have great potential, even if it’s easier to develop than to implement!</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Make connections / build on other ideas</h2>
+                <p>Combine and further develop existing elements, as thoughts are springboards for creating alternatives.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <p>Basic rules for <b>convergent</b> thinking are:</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Apply affirmative judgment</h2>
+                <p>Search for value instead of problems, this creates a positive attitude towards new (never perfect) ideas and their realization.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Be deliberate</h2>
+                <p>Dedicate time to judging option, consider options and check against criteria.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Check your objectives</h2>
+                <p>Options are answers to a question, always check the original question and whether or not an idea is on target.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Keep novelty alive</h2>
+                <p>New options are created also because existing solutions are not satisfactory, so always consider the novelty of an option.</p>
+            </div>
+            <div class="expectation_box">
+                <h2 class="expectation_box_title">Improve ideas</h2>
+                <p>An idea is a seed that needs time and care. Keep in mind to develop them further.</p>
+            </div>
+            <div>
+                <p>Apply creativity techniques or creative thought processes for both divergent (e.g. brainstorming, ...) and convergent (e.g. telescoping, COCD Box, ...) phases (a good summarizing book is "Thinking tools for creativity and innovation" by Florian Rustler). Useful tools are post-its and glue dots.</p>
+            </div>
+
+            <div class="box_reading">
+            <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+                <p><a href="https://en.wikipedia.org/wiki/Creativity_techniques">Creativity techniques</a> from Wikipedia </p>
+                <p><a href="https://en.wikipedia.org/wiki/Outline_of_thought#Creative_thought_processes">Creative thought processes</a> from Wikipedia </p>
+                <p><a href="https://books.google.de/books?id=ihfRDwAAQBAJ&printsec=frontcover&dq=Thinking+tools+for+creativity+and+innovation+pdf&hl=en&sa=X&ved=2ahUKEwiMgLeH3fTqAhUM2aQKHfuQA40Q6AEwAHoECAMQAg#v=onepage&q&f=false">Thinking tools for creativity and innovation</a> by Florian Rustler, book</p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2><b>Mind mapping</b></h2>
+            <p>Mind mapping is a technique that can assist the process and document the results of a brain storm session. Read the mind mapping introduction on wikihow, which gives you a short description of the basics of the mind mapping technique. The website "Mind mapping software blog" goes into more detail on how to improve your mind map using color, keywords and images.</p>
+                <p>There are many free mind mapping tools you can use. One of them is FreeMind, which is a software written in Java that can be freely downloaded.</p>
+            </div>
+            <div class="box_reading">
+                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+                <p><a href="https://www.wikihow.com/Make-a-Mind-Map">How to make a mindmap</a> by Paul Chernyak (wikihow), online article </p>
+                <p><a href="https://mindmappingsoftwareblog.com/color-and-images-in-mind-maps/">Increase the visual impact of your mind maps with images and color</a>by Chuck Frey, online article</p>
+            </div>
+            <div class="box_reading templates_text">
+                <div class="box_title templates_title"><i class="icons fa fa-file"></i>Tool</div>
+                <p><a href=" http://freemind.sourceforge.net/wiki/index.php/Main_Page">FreeMind</a></p>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h2><b>Detailed description of three ideas</b></h2>
+                <p>Provided a more detailed description of three ideas that came up in the brainstorm. Describe the goal, functionality, and target group of the application. After considering all three options, pick a favourite one that you would like to develop further.</p>
+            </div>
+
+            <div class="box_reading tasks_text">
+                <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task</div>
+                <p> Prepare a short Powerpoint of your different ideas for the next session.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="column is-2" id="navigation">
+        <div class="level">
+            <div class="level-item">
+                <button class="navigation_button" onclick="window.location.href='grading.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+                <button class="navigation_button" onclick="window.location.href='set_up_intro.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+        <span id="next_page">Next: Setup Introduction</span>
+
+
+        <div class="theme-switch-wrapper">
+            <div id="theme"><i class='fas fa-sun'></i></div>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="column is-3">
+    </div>
+
+    </div>
+    <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
+</body>
+</html>
+<script>
+    includeHTML();
+</script>
