@@ -5,27 +5,22 @@ var i;
 var j;
 
 function accordion () {
-    /*mark a section
-    for (j = 0; j < acc3.length; j++) {
-        acc3[j].classList.remove("is-active");
-    }
-    var activeSection = document.getElementById(page);
-    activeSection.classList.add("is-active");
-    */
-    /*expand accordion*/
     activeSection();
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
             if (this.className === "accordion") {
                 removeActive();
+
             }
             var panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
                 this.classList.toggle("active");
+                this.firstElementChild.classList.toggle("fa-angle-down");
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
                 this.classList.toggle("active");
+                this.firstElementChild.classList.toggle("fa-angle-up");
             }
         });
     }
@@ -37,9 +32,12 @@ function activeSection() {
     $sections.forEach(el => {
         if (el.href === currentURL) {
             el.classList.toggle('is-active');
-            //console.log(el.parentElement.parentElement.previousElementSibling);
+
+            el.parentElement.parentElement.previousElementSibling.firstElementChild.classList.toggle("fa-angle-up");
             if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
                 el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
+
+
             }
         }
     })
@@ -48,9 +46,11 @@ function activeSection() {
 function removeActive () {
     for (j = 0; j < acc2.length; j++) {
         var panel2 = acc2[j].nextElementSibling;
+
         if(panel2.style.maxHeight) {
             panel2.style.maxHeight = null;
             acc2[j].classList.remove("active");
+
         }
     }
 }
