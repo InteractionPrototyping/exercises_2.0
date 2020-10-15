@@ -16,11 +16,17 @@ function accordion () {
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
                 this.classList.toggle("active");
-                this.firstElementChild.classList.toggle("fa-angle-down");
+
+                if(this.firstElementChild.classList!=null) {
+                  this.firstElementChild.classList.toggle("fa-angle-down");
+                }
             } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
                 this.classList.toggle("active");
-                this.firstElementChild.classList.toggle("fa-angle-up");
+
+                if(this.firstElementChild.classList!=null) {
+                  this.firstElementChild.classList.toggle("fa-angle-up");
+                }
             }
         });
     }
@@ -33,11 +39,12 @@ function activeSection() {
         if (el.href === currentURL) {
             el.classList.toggle('is-active');
 
-            el.parentElement.parentElement.previousElementSibling.firstElementChild.classList.toggle("fa-angle-up");
+          //  if(el.parentElement.parentElement.previousElementSibling.firstElementChild.classList!=null ){
+          //      el.parentElement.parentElement.previousElementSibling.firstElementChild.classList.toggle("fa-angle-up");
+          //  }
+
             if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
                 el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
-
-
             }
         }
     })
@@ -55,19 +62,24 @@ function removeActive () {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+
 
         // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
-                console.log("navbar burger length:"+$navbarBurgers.length);
+        //document.addEventListener('DOMContentLoaded', () => {
+        //const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+window.addEventListener('load', function () {
 
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
+
+        var navbarBurgers = document.getElementById('navbar-burger');
+        const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
+        console.log(navbarBurgers);
+        //console.log("navbar burger length:"+$navbarBurgers.length);
+
+        // Check if there is a navbar burger
+        if (navbarBurgers) {
             console.log("click");
-            // Add a click event on each of them
-            $navbarBurgers.forEach( el => {
-                el.addEventListener('click', () => {
+            // Add a click event
+            document.getElementById("navbar-burger").addEventListener("click", function() {
 
                     // Get the target from the "data-target" attribute
                     const menu = document.getElementById("burger_menu");
@@ -76,18 +88,39 @@ document.addEventListener('DOMContentLoaded', () => {
                     const footer = document.getElementById("footer");
 
                     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    el.classList.toggle('is-active');
+                    navbarBurgers.classList.toggle('is-active');
                     menu.classList.toggle('is-hidden');
                     content.classList.toggle('is-hidden');
                     navigation.classList.toggle('is-hidden');
                     footer.classList.toggle('is-hidden');
-                });
+
             });
         }
 
+      });
+/*
+if (navbarBurgers) {
+    console.log("click");
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
 
+            // Get the target from the "data-target" attribute
+            const menu = document.getElementById("burger_menu");
+            const content = document.getElementById("content");
+            const navigation = document.getElementById("navigation");
+            const footer = document.getElementById("footer");
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            menu.classList.toggle('is-hidden');
+            content.classList.toggle('is-hidden');
+            navigation.classList.toggle('is-hidden');
+            footer.classList.toggle('is-hidden');
+        });
     });
-
+}
+*/
 
 
 
@@ -294,36 +327,3 @@ function checkmarks_save(id) {
         console.log("task" + id);
     }
 }
-
-/*
-    var toggleSwitch = document.querySelectorAll('.checks input[type="checkbox"]');
-
-    toggleSwitch.addEventListener('change', switchCheck, false);
-
-    function switchCheck(e) {
-        if (e.target.checked) {
-            document.documentElement.setAttribute('checkmark', 'is-checked');
-            localStorage.setItem('checkmark', 'is-checked'); //add this
-
-        } else {
-            document.documentElement.setAttribute('checkmark', 'is-not-checked');
-            localStorage.setItem('checkmark', 'is-not-checked'); //add this
-        }
-    }
-
-    for (i = 0; i < toggleSwitch.length; i++) {
-        console.log(toggleSwitch[i]);
-        var currentCheck = localStorage.getItem('checkmark') ? localStorage.getItem('checkmark') : null;
-
-        if (currentCheck) {
-            document.documentElement.setAttribute('checkmark', currentCheck);
-            console.log(toggleSwitch[i]);
-
-            if (currentCheck === 'is-checked') {
-                toggleSwitch[i].checked = true;
-            }
-
-        }
-    }
-}
-*/
