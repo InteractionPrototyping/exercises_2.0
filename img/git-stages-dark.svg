@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Ebene_1"
+   x="0px"
+   y="0px"
+   width="1513.699px"
+   height="901.248px"
+   viewBox="0 0 1513.699 901.248"
+   style="enable-background:new 0 0 1513.699 901.248;"
+   xml:space="preserve"
+   sodipodi:docname="git-stages-dark.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"><metadata
+   id="metadata1089"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs1087" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1680"
+   inkscape:window-height="987"
+   id="namedview1085"
+   showgrid="false"
+   inkscape:zoom="0.50274197"
+   inkscape:cx="756.84949"
+   inkscape:cy="450.62399"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Ebene_1"
+   inkscape:document-rotation="0" />
+<style
+   type="text/css"
+   id="style962">
+<![CDATA[
+	.st0{fill:#E6C973;}
+	.st1{fill:none;stroke:#F9BB7D;stroke-width:5;}
+	.st2{fill:#575756;}
+	.st3{fill:#F9BB7D;}
+	.st4{fill:none;stroke:#E6C973;stroke-width:5;}
+	.st5{fill:#9D9D9C;}
+	.st6{fill:#CEEAF7;}
+	.st7{fill:none;stroke:#D3DE79;stroke-width:5;}
+	.st8{font-family:'Arial','Helvetica',sans-serif;}
+	.st9{fill:#D3DE79;}
+	.st10{font-size:18px;}
+	.st11{font-size:24px;}
+	.st12{font-size:36px;}
+	.st13{font-size:90px;}
+	.st14{fill:none;stroke:#CEEAF7;stroke-width:5;}
+	.st15{fill:none;stroke:#9D9D9C;stroke-width:1.5;stroke-dasharray:6.03,6.03;}
+]]>
+</style>
+<line
+   class="st7"
+   x1="156.08"
+   y1="149.07"
+   x2="156.08"
+   y2="832.684"
+   id="line964" />
+<line
+   class="st14"
+   x1="556.594"
+   y1="239.359"
+   x2="556.594"
+   y2="511.932"
+   id="line966" />
+<line
+   class="st1"
+   x1="958.607"
+   y1="150.646"
+   x2="958.607"
+   y2="715.213"
+   id="line968" />
+<line
+   class="st4"
+   x1="1357.648"
+   y1="320.734"
+   x2="1357.648"
+   y2="832.684"
+   id="line970" />
+<line
+   class="st15"
+   x1="1156.771"
+   y1="901.248"
+   x2="1156.771"
+   y2="0"
+   id="line972" />
+<text
+   transform="matrix(1 0 0 1 917.1267 81.3994)"
+   class="st5 st8 st13"
+   id="text974"
+   style="fill:#f2f2f2;">Local</text>
+<text
+   transform="matrix(1 0 0 1 1179.5505 81.3994)"
+   class="st5 st8 st13"
+   id="text976"
+   style="fill:#f2f2f2;">Online</text>
+<line
+   class="st7"
+   x1="156.08"
+   y1="241.637"
+   x2="538.705"
+   y2="241.637"
+   id="line978" />
+<polygon
+   class="st9"
+   points="555.094,241.637 534.059,233.982 538.707,241.637 534.059,249.295 "
+   id="polygon980" />
+<text
+   transform="matrix(1 0 0 1 327.0251 239.3584)"
+   class="st8 st12"
+   id="text982"
+   style="fill:#ffffff;">add</text>
+<line
+   class="st14"
+   x1="558.094"
+   y1="241.637"
+   x2="938.527"
+   y2="241.637"
+   id="line984" />
+<polygon
+   class="st6"
+   points="957.107,241.637 930.215,231.85 938.527,241.637 930.215,251.428 "
+   id="polygon986" />
+<text
+   transform="matrix(1 0 0 1 699.8503 239.3584)"
+   class="st8 st12"
+   id="text988"
+   style="fill:#ffffff;">commit</text>
+<line
+   class="st14"
+   x1="158.33"
+   y1="150.646"
+   x2="940.027"
+   y2="150.646"
+   id="line990" />
+<polygon
+   class="st6"
+   points="958.607,150.646 931.707,140.857 940.027,150.646 931.707,160.436 "
+   id="polygon992" />
+<text
+   transform="matrix(1 0 0 1 478.3962 148.0713)"
+   class="st8 st12"
+   id="text994"
+   style="fill:#ffffff;">commit -a</text>
+<line
+   class="st1"
+   x1="956.691"
+   y1="320.734"
+   x2="1337.126"
+   y2="320.734"
+   id="line996" />
+<polygon
+   class="st3"
+   points="1355.708,320.734 1328.809,310.945 1337.126,320.734 1328.809,330.523 "
+   id="polygon998" />
+<text
+   transform="matrix(1 0 0 1 1119.4861 318.4541)"
+   class="st8 st12"
+   id="text1000"
+   style="fill:#ffffff;">push</text>
+<line
+   class="st4"
+   x1="975.719"
+   y1="597.123"
+   x2="1356.148"
+   y2="597.123"
+   id="line1002" />
+<polygon
+   class="st0"
+   points="957.135,597.123 984.031,606.91 975.719,597.123 984.031,587.334 "
+   id="polygon1004" />
+<line
+   class="st4"
+   x1="177.66"
+   y1="832.684"
+   x2="1359.895"
+   y2="832.684"
+   id="line1006" />
+<polygon
+   class="st0"
+   points="159.08,832.684 185.979,842.473 177.66,832.684 185.979,822.895 "
+   id="polygon1008" />
+<line
+   class="st1"
+   x1="176.91"
+   y1="597.746"
+   x2="957.107"
+   y2="597.746"
+   id="line1010" />
+<polygon
+   class="st3"
+   points="158.33,597.746 185.229,607.535 176.91,597.746 185.229,587.957 "
+   id="polygon1012" />
+<rect
+   x="0"
+   y="390.043"
+   class="st9"
+   width="312.158"
+   height="121.889"
+   id="rect1014" />
+<rect
+   x="400.512"
+   y="390.043"
+   class="st6"
+   width="312.158"
+   height="121.889"
+   id="rect1016" />
+<text
+   transform="matrix(1 0 0 1 514.7336 463.085)"
+   class="st8 st12"
+   id="text1018"
+   style="fill:#1a1a1a;">Index</text>
+<rect
+   x="801.027"
+   y="390.043"
+   class="st3"
+   width="312.16"
+   height="121.889"
+   id="rect1020" />
+<rect
+   x="1201.539"
+   y="390.043"
+   class="st0"
+   width="312.16"
+   height="121.889"
+   id="rect1022" />
+<line
+   class="st1"
+   x1="176.91"
+   y1="715.215"
+   x2="957.107"
+   y2="715.215"
+   id="line1024" />
+<polygon
+   class="st3"
+   points="158.33,715.215 185.229,725.004 176.91,715.215 185.229,705.426 "
+   id="polygon1026" />
+<text
+   transform="matrix(1 0 0 1 984.2517 112.7607)"
+   class="st2 st8 st11"
+   id="text1028"
+   style="fill:#ffffff;">Git (Software)</text>
+<text
+   transform="matrix(1 0 0 1 1181.5505 112.7607)"
+   class="st2 st8 st11"
+   id="text1030"
+   style="fill:#ffffff;">GitHub (github.com)</text>
+<text
+   transform="matrix(1 0 0 1 485.3562 594.8408)"
+   class="st8 st12"
+   id="text1032"
+   style="fill:#ffffff;">checkout</text>
+<text
+   transform="matrix(1 0 0 1 506.3796 713.2129)"
+   class="st8 st12"
+   id="text1034"
+   style="fill:#ffffff;">merge</text>
+<text
+   transform="matrix(1 0 0 1 1119.4939 595.8408)"
+   class="st8 st12"
+   id="text1036"
+   style="fill:#ffffff;">fetch</text>
+<text
+   transform="matrix(1 0 0 1 725.4978 830.6836)"
+   class="st8 st12"
+   id="text1038"
+   style="fill:#ffffff;">pull</text>
+<text
+   transform="matrix(1 0 0 1 65.7336 463.085)"
+   class="st8 st12"
+   id="text1040"
+   style="fill:#1a1a1a;">Workspace</text>
+<text
+   transform="matrix(1 0 0 1 825.3474 463.085)"
+   class="st8 st12"
+   id="text1042"
+   style="fill:#1a1a1a;">Local Repository</text>
+<text
+   transform="matrix(1 0 0 1 1216.9666 463.085)"
+   class="st8 st12"
+   id="text1044"
+   style="fill:#1a1a1a;">Online Repository</text>
+<g
+   id="g1050"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 320.5046 173.124)"
+   class="st8 st10"
+   id="text1046"
+   style="fill:#ffffff">commit all changed files + add all changed files to the index</text>
+	<text
+   transform="matrix(1 0 0 1 432.3411 194.7236)"
+   class="st8 st10"
+   id="text1048"
+   style="fill:#ffffff">(simultaneous commit and add)</text>
+</g>
+<g
+   id="g1054"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 164.7458 266.5303)"
+   class="st8 st10"
+   id="text1052"
+   style="fill:#ffffff">add files from your local workspace to the index</text>
+</g>
+<g
+   id="g1060"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 581.5447 266.5303)"
+   class="st8 st10"
+   id="text1056"
+   style="fill:#ffffff">commit all changed files that were added to</text>
+	<text
+   transform="matrix(1 0 0 1 718.114 288.1299)"
+   class="st8 st10"
+   id="text1058"
+   style="fill:#ffffff">the index</text>
+</g>
+<g
+   id="g1064"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 995.6677 342.8496)"
+   class="st8 st10"
+   id="text1062"
+   style="fill:#ffffff">send all changes to the online repository</text>
+</g>
+<g
+   id="g1070"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 1015.1833 620.6377)"
+   class="st8 st10"
+   id="text1066"
+   style="fill:#ffffff">download current online files to the </text>
+	<text
+   transform="matrix(1 0 0 1 1096.2468 642.2373)"
+   class="st8 st10"
+   id="text1068"
+   style="fill:#ffffff">local repository</text>
+</g>
+<g
+   id="g1074"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 356.4314 620.6377)"
+   class="st8 st10"
+   id="text1072"
+   style="fill:#ffffff">copy files from local repository / history to workspace</text>
+</g>
+<g
+   id="g1078"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 302.9626 739.6377)"
+   class="st8 st10"
+   id="text1076"
+   style="fill:#ffffff">merge and unite commits of different branches to one repository</text>
+</g>
+<g
+   id="g1082"
+   style="fill:#ffffff">
+	<text
+   transform="matrix(1 0 0 1 482.7053 856.6377)"
+   class="st8 st10"
+   id="text1080"
+   style="fill:#ffffff">update workspace with all remote changes from the online repository</text>
+</g>
+</svg>

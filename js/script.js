@@ -218,7 +218,7 @@ function theme() {
                 document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             }
 
-            if (document.getElementsByClassName('schedule2020') != null) {
+            if (document.getElementById('schedule2020') != null) {
                 document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1_dark.png\"/>";
                 document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2_dark.png\"/>";
                 document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3_dark.png\"/>";
@@ -227,6 +227,11 @@ function theme() {
             if (document.getElementById('spiral_picture') != null) {
                 document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
             }
+
+            if (document.getElementById("git_stages") != null) {
+                document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages-dark.svg\"/>";
+            }
+
 
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
@@ -241,7 +246,7 @@ function theme() {
                 document.getElementById("logo_tum_mobile").innerHTML ="<img src=\"/exercises_2.0/img/tum.svg\"/>";
             }
 
-            if (document.getElementsByClassName('schedule2020') != null) {
+            if (document.getElementById('schedule2020') != null) {
               document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1.png\"/>";
               document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2.png\"/>";
               document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3.png\"/>";
@@ -249,6 +254,10 @@ function theme() {
 
             if (document.getElementById('spiral_picture') != null) {
                 document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-backup.svg');
+            }
+
+            if (document.getElementById("git_stages") != null) {
+                document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages.svg\"/>";
             }
 
         }
@@ -272,7 +281,7 @@ function theme() {
             }
 
 
-            if (document.getElementsByClassName('schedule2020') != null) {
+            if (document.getElementById('schedule2020') != null) {
                 document.getElementById("phase1").innerHTML ="<img src=\"/exercises_2.0/img/phase1_dark.png\"/>";
                 document.getElementById("phase2").innerHTML ="<img src=\"/exercises_2.0/img/phase2_dark.png\"/>";
                 document.getElementById("phase3").innerHTML ="<img src=\"/exercises_2.0/img/phase3_dark.png\"/>";
@@ -280,6 +289,10 @@ function theme() {
 
             if (document.getElementById('spiral_picture') != null) {
                 document.getElementById("spiral_picture").setAttribute('href', '/exercises_2.0/img/orga-spiral-new-dark.svg');
+            }
+
+            if (document.getElementById("git_stages") != null) {
+                document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages-dark.svg\"/>";
             }
 
         } else {
