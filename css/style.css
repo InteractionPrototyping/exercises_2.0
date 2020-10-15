@@ -571,3 +571,11 @@ columns {
     margin:10px;
     font-size:21px;
 }
+
+#orga_spiral {
+     align-self: flex-start;
+}
+
+#orga_spiral li, #orga_spiral a {
+  color:var(--primary-color)!important;
+}
