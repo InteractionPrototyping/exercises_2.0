@@ -268,7 +268,7 @@ function theme() {
 
 }
 
-//function checkmarks called at body onload in each html doc
+//function checkmarks called at the end of include.js
 function checkmarks() {
     console.log("load");
     for (i = 1; i < 24; i++) {

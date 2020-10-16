@@ -29,5 +29,6 @@ function includeHTML() {
     theme();
     accordion();
     burger();
+    checkmarks();
 
 }
