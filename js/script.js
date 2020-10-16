@@ -39,10 +39,6 @@ function activeSection() {
         if (el.href === currentURL) {
             el.classList.toggle('is-active');
 
-          //  if(el.parentElement.parentElement.previousElementSibling.firstElementChild.classList!=null ){
-          //      el.parentElement.parentElement.previousElementSibling.firstElementChild.classList.toggle("fa-angle-up");
-          //  }
-
             if(el.parentElement.parentElement.previousElementSibling.className === "accordion"){
                 el.parentElement.parentElement.style.maxHeight = el.parentElement.parentElement.scrollHeight + "px";
             }
@@ -64,19 +60,14 @@ function removeActive () {
 
 
 
-        // Get all "navbar-burger" elements
-        //document.addEventListener('DOMContentLoaded', () => {
-        //const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 window.addEventListener('load', function () {
 
 
-        var navbarBurgers = document.getElementById('navbar-burger');
-        const $sections = Array.prototype.slice.call(document.querySelectorAll('.section'), 0);
-        console.log(navbarBurgers);
-        //console.log("navbar burger length:"+$navbarBurgers.length);
+        var navbarBurger = document.getElementById('navbar-burger');
+        console.log(navbarBurger);
 
         // Check if there is a navbar burger
-        if (navbarBurgers) {
+        if (navbarBurger) {
             console.log("click");
             // Add a click event
             document.getElementById("navbar-burger").addEventListener("click", function() {
@@ -88,7 +79,7 @@ window.addEventListener('load', function () {
                     const footer = document.getElementById("footer");
 
                     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    navbarBurgers.classList.toggle('is-active');
+                    navbarBurger.classList.toggle('is-active');
                     menu.classList.toggle('is-hidden');
                     content.classList.toggle('is-hidden');
                     navigation.classList.toggle('is-hidden');
@@ -98,29 +89,6 @@ window.addEventListener('load', function () {
         }
 
       });
-/*
-if (navbarBurgers) {
-    console.log("click");
-    // Add a click event on each of them
-    $navbarBurgers.forEach( el => {
-        el.addEventListener('click', () => {
-
-            // Get the target from the "data-target" attribute
-            const menu = document.getElementById("burger_menu");
-            const content = document.getElementById("content");
-            const navigation = document.getElementById("navigation");
-            const footer = document.getElementById("footer");
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            menu.classList.toggle('is-hidden');
-            content.classList.toggle('is-hidden');
-            navigation.classList.toggle('is-hidden');
-            footer.classList.toggle('is-hidden');
-        });
-    });
-}
-*/
 
 
 
@@ -190,8 +158,6 @@ function variables() {
         document.getElementById("deadline_task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
     } else {
     }
-
-
 
     //Update complete schedule manually in index.html
 }
