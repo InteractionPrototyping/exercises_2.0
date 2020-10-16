@@ -2,6 +2,7 @@ import re
 from bs4 import BeautifulSoup
 import json
 
+
 #URL/NAME
 filenames = ["index.html",
 "pages/general/grading.html",
@@ -42,7 +43,9 @@ outfile_path='js/search_index.js'
 def cleanhtml(input_string):
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', input_string)
-    return cleantext
+    contentcleantext= re.split('id="bottom_navigation" ',cleantext)
+    print(contentcleantext[0])
+    return contentcleantext[0]
 
 def buildjson(filename):
     print("Building json from: "+filename)
