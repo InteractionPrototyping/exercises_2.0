@@ -28,5 +28,6 @@ function includeHTML() {
     variables();
     theme();
     accordion();
+    burger();
 
 }

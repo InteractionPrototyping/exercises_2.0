@@ -4,6 +4,7 @@ var acc3 = document.getElementsByClassName("section");
 var i;
 var j;
 
+//function accordion called at the end of include.js
 function accordion () {
     activeSection();
     for (i = 0; i < acc.length; i++) {
@@ -58,11 +59,8 @@ function removeActive () {
     }
 }
 
-
-
-window.addEventListener('load', function () {
-
-
+//function burger called at the end of include.js
+function burger() {
         var navbarBurger = document.getElementById('navbar-burger');
         console.log(navbarBurger);
 
@@ -88,7 +86,7 @@ window.addEventListener('load', function () {
             });
         }
 
-      });
+      };
 
 
 
@@ -113,7 +111,7 @@ function topFunction() {
 }
 
 
-
+//function variables called at the end of include.js
 function variables() {
 
     //In Footer: automatic term selection
@@ -163,7 +161,7 @@ function variables() {
 }
 
 
-
+//function theme called at the end of include.js
 function theme() {
     const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 
@@ -270,6 +268,7 @@ function theme() {
 
 }
 
+//function checkmarks called at body onload in each html doc
 function checkmarks() {
     console.log("load");
     for (i = 1; i < 24; i++) {
