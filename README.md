@@ -1,18 +1,18 @@
 # IPP Exercises 2.0
 
 ## Elements to change each semester
-* Update various elements within function variables() in js/script.js
-* Update schedule manually in index.html
+* Update various elements within function `variables()` in `js/script.js`
+* Update schedule manually in `index.html`
 * Make sure feedback form in footer is still active and accessible
 * Check each link to see if it's still active
 * If a task changes, make sure the ToDo list is updated as well
 
 ## Search with lunr.js
-* If a new html page is created, add it to the array *filenames* in buildsearchindex.py
-* If new content is added to an existing html page or an entire new html page is created, run buildsearchindex.py
-* The python script will extract html content until the marker "id=bottom_navigation" (excluding the todo list) and delete tags
-* The script will then create a json object array in a search_index.js file
-* Each element of the array will contain the url, title and stripped content of html pages
+* If a new html page is created, add it to the array ** *filenames* ** in `buildsearchindex.py`
+* If new content is added to an existing html page or an entire new html page is created, run `buildsearchindex.py`
+* The python script will extract html content until the marker `id=bottom_navigation` (excluding the todo list) and delete html tags
+* The script will then create a json object array in a `search_index.js` file
+* Each element of the array will contain the **url**, **title** and **stripped content of html pages**
 
 ## First intro session
 * Website is supposed to be looked at throughout the semester
