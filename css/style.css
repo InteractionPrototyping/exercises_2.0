@@ -290,7 +290,7 @@ footer {
 .video {
     display:block;
     width:100%;
-    max-width: 800px ;
+    height:315px;
     margin: auto;
 }
 
