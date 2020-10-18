@@ -157,7 +157,7 @@ function variables() {
     } else {
     }
 
-    //Update complete schedule manually in index.html
+
 }
 
 
