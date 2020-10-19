@@ -633,6 +633,7 @@ input[type="checkbox"] + label:before {
 input[type="checkbox"]:checked + label:before {
   width: 10px;
   left: 5px;
+  top:-2px;
   border-radius: 0;
   opacity: 1;
   border-top-color: transparent;
