@@ -3,14 +3,16 @@
 ## Elements to change each semester
 * Update various elements within function `variables()` in `js/script.js`
 * Update schedule manually in `index.html`
+* Update graphical schedule in `index.html` from the [Figma template](https://www.figma.com/file/8T2gTaGi2tDvFAyabXbMBy/IPP?node-id=0%3A1). Make sure you create the dark theme version as well!
 * Make sure feedback form in footer is still active and accessible
 * Check each link to see if it's still active
 * If a task changes, make sure the ToDo list is updated as well
+* If an image is added, make sure the dark version is added as well (if necessary) and add it to the function `theme()` in `js/script.js`
 
 ## Search with lunr.js
 * If a new html page is created, add it to the array ***filenames*** in `buildsearchindex.py`
 * If new content is added to an existing html page or an entire new html page is created, run `buildsearchindex.py`
-* The python script will extract html content until the marker `id=bottom_navigation` (excluding the todo list) and delete html tags
+* The python script will extract html content until the marker `id=bottom_navigation` (excluding the ToDo list) and delete html tags
 * The script will then create a json object array in a `search_index.js` file
 * Each element of the array will contain the **url**, **title** and **stripped content of html pages**
 

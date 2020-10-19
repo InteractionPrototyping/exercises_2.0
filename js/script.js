@@ -195,6 +195,10 @@ function theme() {
                 document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages-dark.svg\"/>";
             }
 
+            if (document.getElementById('tools') != null) {
+                document.getElementById("tools").innerHTML ="<img src=\"/exercises_2.0/img/tools_dark.png\"/>";
+            }
+
 
         } else {
             document.documentElement.setAttribute('data-theme', 'light');
@@ -221,6 +225,10 @@ function theme() {
 
             if (document.getElementById("git_stages") != null) {
                 document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages.svg\"/>";
+            }
+
+            if (document.getElementById('tools') != null) {
+                document.getElementById("tools").innerHTML ="<img src=\"/exercises_2.0/img/tools.png\"/>";
             }
 
         }
@@ -256,6 +264,10 @@ function theme() {
 
             if (document.getElementById("git_stages") != null) {
                 document.getElementById("git_stages").innerHTML = "<img src=\"/exercises_2.0/img/git-stages-dark.svg\"/>";
+            }
+
+            if (document.getElementById('tools') != null) {
+                document.getElementById("tools").innerHTML ="<img src=\"/exercises_2.0/img/tools_dark.png\"/>";
             }
 
         } else {
