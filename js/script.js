@@ -75,6 +75,7 @@ function burger() {
                     const content = document.getElementById("content");
                     const navigation = document.getElementById("navigation");
                     const footer = document.getElementById("footer");
+                    const title = document.getElementById("mobile_title");
 
                     // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                     navbarBurger.classList.toggle('is-active');
@@ -82,13 +83,12 @@ function burger() {
                     content.classList.toggle('is-hidden');
                     navigation.classList.toggle('is-hidden');
                     footer.classList.toggle('is-hidden');
+                    title.classList.toggle('is-hidden');
 
             });
         }
 
       };
-
-
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
@@ -102,6 +102,7 @@ function scrollFunction() {
         mybutton = document.getElementById("myBtn");
         mybutton.style.display = "none";
     }
+
 }
 
 // When the user clicks on the button, scroll to the top of the document
