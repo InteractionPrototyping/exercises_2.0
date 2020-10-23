@@ -1,3 +1,56 @@
+/*** VARIABLES TO BE CHANGED EACH SEMESTER ***/
+
+//function variables called at the end of include.js
+function variables() {
+
+    //In Footer: automatic term selection
+    var year = (new Date()).getFullYear();
+    var month = (new Date()).getMonth();
+    if (month < 3) {
+        term = "Winter Term " + (year - 1) + "/" + year;
+    } else if (month > 8) {
+        term = "Winter Term " + year + "/" + (year + 1)
+    } else {
+        term = "Summer Term " + year;
+    }
+    document.title = "Interaction Prototyping: " + term;
+    document.getElementById("term").innerHTML = term;
+    document.getElementById("copyright").innerHTML= year;
+
+
+    //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
+    var el = document.getElementById('name_person');
+    if (el != null) {
+        document.getElementById("name_person").innerHTML = "Lorenz Prasch.";
+    } else {
+    }
+
+    // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
+    var el = document.getElementById('deadline_task8');
+    if (el != null) {
+        document.getElementById("deadline_task8").innerHTML = "xx.xx.2020";
+    } else {
+    }
+
+    // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
+    var el = document.getElementById('deadline_task9');
+    if (el != null) {
+        document.getElementById("deadline_task9").innerHTML = "xx.xx.2020";
+    } else {
+    }
+
+    // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
+    var el = document.getElementById('deadline_task20');
+    if (el != null) {
+        document.getElementById("deadline_task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
+    } else {
+    }
+
+
+}
+
+/*** NAVIGATION ***/
+
 var acc = document.getElementsByClassName("accordion");
 var acc2 = document.getElementsByClassName("active");
 var acc3 = document.getElementsByClassName("section");
@@ -90,6 +143,8 @@ function burger() {
 
       };
 
+/*** SCROLLING ***/
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -112,55 +167,7 @@ function topFunction() {
 }
 
 
-//function variables called at the end of include.js
-function variables() {
-
-    //In Footer: automatic term selection
-    var year = (new Date()).getFullYear();
-    var month = (new Date()).getMonth();
-    if (month < 3) {
-        term = "Winter Term " + (year - 1) + "/" + year;
-    } else if (month > 8) {
-        term = "Winter Term " + year + "/" + (year + 1)
-    } else {
-        term = "Summer Term " + year;
-    }
-    document.title = "Interaction Prototyping: " + term;
-    document.getElementById("term").innerHTML = term;
-    document.getElementById("copyright").innerHTML= year;
-
-
-    //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
-    var el = document.getElementById('name_person');
-    if (el != null) {
-        document.getElementById("name_person").innerHTML = "Lorenz Prasch.";
-    } else {
-    }
-
-    // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
-    var el = document.getElementById('deadline_task8');
-    if (el != null) {
-        document.getElementById("deadline_task8").innerHTML = "xx.xx.2020";
-    } else {
-    }
-
-    // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
-    var el = document.getElementById('deadline_task9');
-    if (el != null) {
-        document.getElementById("deadline_task9").innerHTML = "xx.xx.2020";
-    } else {
-    }
-
-    // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
-    var el = document.getElementById('deadline_task20');
-    if (el != null) {
-        document.getElementById("deadline_task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
-    } else {
-    }
-
-
-}
-
+/*** THEME ***/
 
 //function theme called at the end of include.js
 function theme() {
@@ -170,6 +177,9 @@ function theme() {
 
     function switchTheme(e) {
         if (e.target.checked) {
+
+            //Dark theme
+
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark'); //add this
             document.getElementById("theme").innerHTML="";
@@ -202,6 +212,9 @@ function theme() {
 
 
         } else {
+
+            //Light theme
+
             document.documentElement.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light'); //add this
             document.getElementById("theme").innerHTML="";
@@ -235,6 +248,7 @@ function theme() {
         }
     }
 
+    //Get current theme
     const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
     if (currentTheme) {
@@ -280,6 +294,8 @@ function theme() {
     }
 
 }
+
+/*** CHECKMARKS ***/
 
 //function checkmarks called at the end of include.js
 function checkmarks() {
