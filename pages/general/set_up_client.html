@@ -17,122 +17,122 @@
 
 <body onload="checkmarks();">
 
-<div class="columns is-fullheight">
+  <div class="columns is-fullheight">
     <div class="column is-2 fill">
 
     </div>
 
     <div class="column is-2 is-sidebar-menu">
-        <div w3-include-html="../shared/sidebar.html"></div>
+      <div w3-include-html="../shared/sidebar.html"></div>
     </div>
     <div class="column is-5" id="content">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-        <section>
-            <h1 class="title">The GitHub client - a graphical user interface for Git</h1>
-            <div>
-                <p>Here we will explain how you can setup and work with the GitHub client in 3 easy steps. However, there are alternative approaches. If you as a team are more comfortable using other types of interfaces to work with Git, feel free to use those.</p>
-            </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+      <section>
+        <h1 class="title">The GitHub client - a graphical user interface for Git</h1>
+        <div>
+          <p>Here we will explain how you can setup and work with the GitHub client in 3 easy steps. However, there are alternative approaches. If you as a team are more comfortable using other types of interfaces to work with Git, feel free to use those.</p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">Step 1: Create your local repository</h1>
+        <div>
+          <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the <img src="../../img/github-icon-plus.png"> icon) your group’s online repository and choose a folder, where you want your local workspace to be.</p><br/>
+          <p>You’ll now find your local repository overview in the left menu:</p>
+          <img src="../../img/local-repo.png">
+          <p><br/>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">Step 2: Commit</h1>
+        <div>
+          <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes in the area "uncommitted changes", in the right area you will see all the changes in the files (and their differing content):</p>
+          <p><br/>You simply need to enter some text which describes your modifications (important for your teammates, e.g. “Functionality X improved” or “Bug Y fixed”) and press the commit button: <img src="../../img/github-icon-commit.png"></p>
+          <img src="../../img/commiting-changes.png">
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">Step 3: Push</h1>
+        <div>
+          <p>Before your edit appears online, you also need to push your changes from your local repository to the online repository. Instead of pushing/pulling, GitHub offers a synchronization of the online and local repositories. Simply press the corresponding button: <img src="../../img/github-icon-sync.png"></p>
+          <p><br/>You can explore the different revisions (or “snapshots”) by clicking the different commits in your history. There you get a view of the differences (added/removed code for each file) and the possibility of reverting changes:</p>
+          <img src="../../img/revert.jpg"><br/>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">What if something goes wrong: Reverting and conflicts</h1>
+        <div>
+          <p>Imagine you made a commit in the past and later on in your project you realize: this was not, what you wanted to do. Git simply gives you the possibility, to revert a single commit in the past: Select the commit, you want to revert (in the history). Press the <img src="../../img/github-icon-revert.png"> button (this is only possible, if all pending changes where committed), you now have to commit/sync the revert.</p>
+          <p><br/>If two (or more) persons modified a file simultaneously, this will result in a conflict which you need to resolve by merging. Github will amend the conflicting file with conflict markers: The marker for a starting conflict is <code><<<<<<<</code>, while the end of the conflict is marked with <code>>>>>>></code>. The two versions are separated by <code>=======</code>. Open the conflicting document with an editor of your choice (e.g. Brackets) and resolve the conflict by deleting the unwanted version and the markers. A file could look like this:</p>
+          <br/>
+          <pre><<<<<<< HEAD
+            Here is your change
+            =======
+            Here is another conflicting change
+            >>>>>>> origin/gh-pages</pre>
+            <p><br/>Once you resolved the conflict, commit the merged file (don't forget to select it by clicking <img src="../../img/github-icon-select.png" alt="select"> in GitHub in the "Files to commit" area).</p>
+            <p><br/><b>Hint:</b> A good method to try to avoid merge conflicts is for each team member to work on separate pages or functionalities of the app (as long as this approach makes sense for your specific app).<br/></p>
+          </div>
         </section>
 
         <section>
-            <h1 class="title is-4">Step 1: Create your local repository</h1>
-            <div>
-                <p>After installing and logging in to GitHub, you are ready to work with the Windows/Mac Client of GitHub. To advance the usability of working with Git as online cloud memory with several addons, you usually won’t need any commands in this GUI. Below you‘ll find some views of the GitHub GUI in different modes. Start by cloning (press the <img src="../../img/github-icon-plus.png"> icon) your group’s online repository and choose a folder, where you want your local workspace to be.</p><br/>
-                <p>You’ll now find your local repository overview in the left menu:</p>
-                <img src="../../img/local-repo.png">
-                <p><br/>This shelters all the additional functionalities, which GitHub provides. For example, you can now start editing the files in your working directory. Therefore right-click the repository and select <kbd>Open in Explorer</kbd>. There you can add files or edit the existing ones.</p>
-            </div>
+          <h1 class="title is-4">Branches</h1>
+          <div>
+            <p>There is a concept called “branches” in GitHub, those are used for allowing a parallel workflow of multiple application versions in big software projects. Basically, one would create a copy of the existing application (create a branch), improve the functionality (without altering the main project branch, called the master branch), and once the functionality is there, discuss it and finally merge it to the master branch.</p><br/>
+            <p>For the interaction prototyping course, it’s sufficient if you stay in the <code>master</code> branch (for private documents like tests, presentations, evaluation, …) or in the <code>gh-pages</code> branch (for the development of your application, which then will be publically available in the internet). Keep in mind: the latter branch is publically available in the internet. You need to select the appropriate branch in the top bar of your GitHub client: <img src="../../img/github-icon-branch.png" alt="github branch"></p>
+          </div>
         </section>
 
         <section>
-            <h1 class="title is-4">Step 2: Commit</h1>
-            <div>
-                <p>Whenever a file is modified, you can create a commit (“snapshot” of your current project state). The GitHub client recognizes and summarizes the changes in the area "uncommitted changes", in the right area you will see all the changes in the files (and their differing content):</p>
-                <p><br/>You simply need to enter some text which describes your modifications (important for your teammates, e.g. “Functionality X improved” or “Bug Y fixed”) and press the commit button: <img src="../../img/github-icon-commit.png"></p>
-                <img src="../../img/commiting-changes.png">
-            </div>
-        </section>
+          <h1 class="title is-4">Ready, steady, go!</h1>
+          <div>
+            <p><b>Find further information</b> by reading the GitHub tutorials. <b>Create</b> an arbitrary HTML document in your cloned repository. Provoke a <b>conflict</b>: multiple authors are editing this HTML document and synchronizing changes. Try to resolve the conflicts by merging the edits. Try to revert to an earlier version.</p><br/>
+            <p><b>Discuss with your tutors</b>: What is a commit, a synchronization, and a branch?</p>
+          </div>
 
-        <section>
-            <h1 class="title is-4">Step 3: Push</h1>
-            <div>
-                <p>Before your edit appears online, you also need to push your changes from your local repository to the online repository. Instead of pushing/pulling, GitHub offers a synchronization of the online and local repositories. Simply press the corresponding button: <img src="../../img/github-icon-sync.png"></p>
-                <p><br/>You can explore the different revisions (or “snapshots”) by clicking the different commits in your history. There you get a view of the differences (added/removed code for each file) and the possibility of reverting changes:</p>
-                <img src="../../img/revert.jpg"><br/>
-            </div>
-        </section>
-
-        <section>
-            <h1 class="title is-4">What if something goes wrong: Reverting and conflicts</h1>
-            <div>
-                <p>Imagine you made a commit in the past and later on in your project you realize: this was not, what you wanted to do. Git simply gives you the possibility, to revert a single commit in the past: Select the commit, you want to revert (in the history). Press the <img src="../../img/github-icon-revert.png"> button (this is only possible, if all pending changes where committed), you now have to commit/sync the revert.</p>
-                <p><br/>If two (or more) persons modified a file simultaneously, this will result in a conflict which you need to resolve by merging. Github will amend the conflicting file with conflict markers: The marker for a starting conflict is <code><<<<<<<</code>, while the end of the conflict is marked with <code>>>>>>></code>. The two versions are separated by <code>=======</code>. Open the conflicting document with an editor of your choice (e.g. Brackets) and resolve the conflict by deleting the unwanted version and the markers. A file could look like this:</p>
-                <br/>
-                <pre><<<<<<< HEAD
-Here is your change
-=======
-Here is another conflicting change
->>>>>>> origin/gh-pages</pre>
-                <p><br/>Once you resolved the conflict, commit the merged file (don't forget to select it by clicking <img src="../../img/github-icon-select.png" alt="select"> in GitHub in the "Files to commit" area).</p>
-                <p><br/><b>Hint:</b> A good method to try to avoid merge conflicts is for each team member to work on separate pages or functionalities of the app (as long as this approach makes sense for your specific app).<br/></p>
-            </div>
-        </section>
-
-        <section>
-            <h1 class="title is-4">Branches</h1>
-            <div>
-                <p>There is a concept called “branches” in GitHub, those are used for allowing a parallel workflow of multiple application versions in big software projects. Basically, one would create a copy of the existing application (create a branch), improve the functionality (without altering the main project branch, called the master branch), and once the functionality is there, discuss it and finally merge it to the master branch.</p><br/>
-                <p>For the interaction prototyping course, it’s sufficient if you stay in the <code>master</code> branch (for private documents like tests, presentations, evaluation, …) or in the <code>gh-pages</code> branch (for the development of your application, which then will be publically available in the internet). Keep in mind: the latter branch is publically available in the internet. You need to select the appropriate branch in the top bar of your GitHub client: <img src="../../img/github-icon-branch.png" alt="github branch"></p>
-            </div>
-        </section>
-
-        <section>
-            <h1 class="title is-4">Ready, steady, go!</h1>
-            <div>
-                <p><b>Find further information</b> by reading the GitHub tutorials. <b>Create</b> an arbitrary HTML document in your cloned repository. Provoke a <b>conflict</b>: multiple authors are editing this HTML document and synchronizing changes. Try to resolve the conflicts by merging the edits. Try to revert to an earlier version.</p><br/>
-                <p><b>Discuss with your tutors</b>: What is a commit, a synchronization, and a branch?</p>
-            </div>
-
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
-                <p><a href="https://guides.github.com/introduction/flow/">Git "branches" explanation</a></p>
-                <p><a href="https://guides.github.com/">GitHub Tutorials</a></p>
-            </div>
+          <div class="box_reading">
+            <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
+            <p><a href="https://guides.github.com/introduction/flow/">Git "branches" explanation</a></p>
+            <p><a href="https://guides.github.com/">GitHub Tutorials</a></p>
+          </div>
         </section>
         <div class="level" >
-            <div class="level-item" id="bottom_navigation">
-                <button class="navigation_button end" onclick="window.location.href='set_up_commands.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Setup Git Commands</p></button>
-                <button class="navigation_button end" onclick="window.location.href='set_up_development.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Setup Development Environment</p></button>
-            </div>
+          <div class="level-item" id="bottom_navigation">
+            <button class="navigation_button end" onclick="window.location.href='set_up_commands.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Setup Git Commands</p></button>
+            <button class="navigation_button end" onclick="window.location.href='set_up_development.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Setup Development Environment</p></button>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div class="column is-2" id="navigation">
+      <div class="column is-2" id="navigation">
         <div class="level">
-            <div class="level-item">
-                <button class="navigation_button" onclick="window.location.href='set_up_commands.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
-                <button class="navigation_button" onclick="window.location.href='set_up_development.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
-            </div>
+          <div class="level-item">
+            <button class="navigation_button" onclick="window.location.href='set_up_commands.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+            <button class="navigation_button" onclick="window.location.href='set_up_development.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
+          </div>
         </div>
         <span id="next_page">Next: Setup Development Environment</span>
 
 
         <div class="theme-switch-wrapper">
-            <div id="theme"><i class='fas fa-sun'></i></div>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
+          <div id="theme"><i class='fas fa-sun'></i></div>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
         </div>
-    </div>
+      </div>
 
-    <div class="column is-3">
-    </div>
+      <div class="column is-3">
+      </div>
 
     </div>
     <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
-</body>
-</html>
-<script>
-    includeHTML();
+  </body>
+  </html>
+  <script>
+  includeHTML();
 </script>

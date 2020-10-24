@@ -1,118 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../js/lunr.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IPP</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/svg" href="../../img/tum.svg">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lunr.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPP</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg" href="../../img/tum.svg">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body onload="checkmarks();">
-
-<div class="columns is-fullheight">
+  
+  <div class="columns is-fullheight">
 
     <div class="column is-2 fill">
     </div>
 
     <div class="column is-2 is-sidebar-menu">
-        <div w3-include-html="../shared/sidebar.html"></div>
+      <div w3-include-html="../shared/sidebar.html"></div>
     </div>
 
     <div class="column is-5" id="content">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-        <section>
-            <h1 class="title">Introduction</h1>
-            <h1 class="title is-4">Join Mendeley</h1>
-            <div>
-                <p>The literature presented in class and used in these exercises is available in the <b>Mendeley Interaction Prototyping group</b>, which you should join. There is a desktop client of Mendeley.</p>
-                <p>Many of the papers and books are available online (inside the university network). You can also find papers or books through the university's eAccess.</p>
-            </div>
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
-                <p><a href="https://www.mendeley.com/community/interaction-prototyping/">Mendeley Interaction Prototyping group</a></p>
-                <p><a href="https://www.mendeley.com/download-desktop-new/">Mendeley Desktop Client</a></p>
-                <p><a href="https://www.ub.tum.de/eaccess">TUM eAccess</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h1 class="title is-4">Join GitHub</h1>
-            <div>
-                <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
-               <ol>
-                   <li class="numbers">Create free GitHub account</li>
-                   <li class="numbers">Send your <b>GitHub user names and your group's chosen name</b> to <span id="name_person"></span></li>
-                   <li class="numbers">You will be given access to the repository <a>https://github.com/interactionprototyping/GROUP</a>, where GROUP is your chosen name.</li>
-                   <li class="numbers">Download and install the Windows or Mac client.</li>
-                   <li class="numbers">Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>
-               </ol>
-            </div>
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
-                <p><a href="https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=emb_logo">"What is github?" (video)</a></p>
-                <p><a href="https://github.com/join">GitHub new account</a></p>
-                <p><a href="https://desktop.github.com/">GitHub desktop client</a></p>
-            </div>
-        </section>
-
-        <section>
-            <h1 class="title is-4">GitHub benefits</h1>
-            <div>
-                <p>GitHub is an online cloud service (online storage) which simplifies collaboration in IT projects. It is based on the software Git. The combination provides tools for solving conflicted versions of a file, merging different edits in the same document and backing up your project.</p><br/>
-                <p>The benefits of GitHub are threefold:</p>
-                <ul>
-                    <li class="bullets">Version control (all code revisions are stored, you can jump back)</li>
-                    <li class="bullets">Collaboration (your team can work together on the code)</li>
-                    <li class="bullets">Cloud (your app is stored in the internet and can be accessed via smartphones)</li>
-                </ul>
-            </div>
-        </section>
-        <div class="level" >
-            <div class="level-item" id="bottom_navigation">
-                <button class="navigation_button end" onclick="window.location.href='grading.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Expectations</p></button>
-                <button class="navigation_button end" onclick="window.location.href='set_up_commands.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Setup Git Commands</p></button>
-            </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+      <section>
+        <h1 class="title">Introduction</h1>
+        <h1 class="title is-4">Join Mendeley</h1>
+        <div>
+          <p>The literature presented in class and used in these exercises is available in the <b>Mendeley Interaction Prototyping group</b>, which you should join. There is a desktop client of Mendeley.</p>
+          <p>Many of the papers and books are available online (inside the university network). You can also find papers or books through the university's eAccess.</p>
         </div>
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
+          <p><a href="https://www.mendeley.com/community/interaction-prototyping/">Mendeley Interaction Prototyping group</a></p>
+          <p><a href="https://www.mendeley.com/download-desktop-new/">Mendeley Desktop Client</a></p>
+          <p><a href="https://www.ub.tum.de/eaccess">TUM eAccess</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">Join GitHub</h1>
+        <div>
+          <p>Choose a <b>group name</b> for your team. Each team member needs to set up a GitHub environment:</p>
+          <ol>
+            <li class="numbers">Create free GitHub account</li>
+            <li class="numbers">Send your <b>GitHub user names and your group's chosen name</b> to <span id="name_person"></span></li>
+            <li class="numbers">You will be given access to the repository <a>https://github.com/interactionprototyping/GROUP</a>, where GROUP is your chosen name.</li>
+            <li class="numbers">Download and install the Windows or Mac client.</li>
+            <li class="numbers">Clone the <code>gh-pages</code> branch of your repository. Find instructions on this below.</li>
+          </ol>
+        </div>
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Helpful links</div>
+          <p><a href="https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=emb_logo">"What is github?" (video)</a></p>
+          <p><a href="https://github.com/join">GitHub new account</a></p>
+          <p><a href="https://desktop.github.com/">GitHub desktop client</a></p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">GitHub benefits</h1>
+        <div>
+          <p>GitHub is an online cloud service (online storage) which simplifies collaboration in IT projects. It is based on the software Git. The combination provides tools for solving conflicted versions of a file, merging different edits in the same document and backing up your project.</p><br/>
+          <p>The benefits of GitHub are threefold:</p>
+          <ul>
+            <li class="bullets">Version control (all code revisions are stored, you can jump back)</li>
+            <li class="bullets">Collaboration (your team can work together on the code)</li>
+            <li class="bullets">Cloud (your app is stored in the internet and can be accessed via smartphones)</li>
+          </ul>
+        </div>
+      </section>
+      <div class="level" >
+        <div class="level-item" id="bottom_navigation">
+          <button class="navigation_button end" onclick="window.location.href='grading.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Expectations</p></button>
+          <button class="navigation_button end" onclick="window.location.href='set_up_commands.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Setup Git Commands</p></button>
+        </div>
+      </div>
     </div>
 
     <div class="column is-2" id="navigation">
-        <div class="level">
-            <div class="level-item">
-                <button class="navigation_button" onclick="window.location.href='grading.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
-                <button class="navigation_button" onclick="window.location.href='set_up_commands.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
-            </div>
+      <div class="level">
+        <div class="level-item">
+          <button class="navigation_button" onclick="window.location.href='grading.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+          <button class="navigation_button" onclick="window.location.href='set_up_commands.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
         </div>
-        <span id="next_page">Next: Setup Git Commands</span>
+      </div>
+      <span id="next_page">Next: Setup Git Commands</span>
 
 
-        <div class="theme-switch-wrapper">
-            <div id="theme"><i class='fas fa-sun'></i></div>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
+      <div class="theme-switch-wrapper">
+        <div id="theme"><i class='fas fa-sun'></i></div>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </div>
 
     <div class="column is-3">
     </div>
 
-    </div>
-    <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
+  </div>
+  <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
 
 
 </body>
 </html>
 <script>
-   includeHTML();
+includeHTML();
 </script>

@@ -1,105 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../js/lunr.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IPP</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/svg" href="../../img/tum.svg">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lunr.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPP</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg" href="../../img/tum.svg">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
 <body onload="checkmarks();">
 
-<div class="columns is-fullheight">
+  <div class="columns is-fullheight">
 
     <div class="column is-2 fill">
     </div>
 
     <div class="column is-2 is-sidebar-menu">
-        <div w3-include-html="../shared/sidebar.html"></div>
+      <div w3-include-html="../shared/sidebar.html"></div>
     </div>
-
+    
     <div class="column is-5" id="content">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-        <section>
-            <h1 class="title">Implementation</h1>
-            <h2 class="subtitle">Bring your idea to life!</h2>
-            <iframe class="video" src="https://www.youtube.com/embed/lHz73IGYK2w?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+      <section>
+        <h1 class="title">Implementation</h1>
+        <h2 class="subtitle">Bring your idea to life!</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/lHz73IGYK2w?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
-                <p><a href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/">"UX Prototypes: Low Fidelity vs. High Fidelity" </a> by Kara Pernice, online article</p>
-                <p><a href="https://www.youtube.com/watch?v=d5_h1VuwD6g">"Rapid prototyping Google Glass - Tom Chi"</a> by TED-ed, video</p>
-            </div>
-
-        </section>
-
-        <section>
-            <h1 class="title is-4">Prototyping Dimensions</h1>
-            <iframe class="video" src="https://www.youtube.com/embed/Bovo9-Z3iBc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-
-        <section>
-            <h1 class="title is-4">Overview Implementation tasks</h1>
-            <div class="level">
-                <div>
-                    <img  src="../../img/orga-spiral_blank_implementation.svg">
-                </div>
-                <div id="orga_spiral">
-                    <p>We will take a closer look at implementation for several tasks. Feel free to already discover more about the methods:</p>
-                    <br/>
-                    <ul>
-                        <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M1_paper.html" class="colored_links">Iteration 1: Paper Prototyping</a></li>
-                        <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M2_hifiPrototyping.html" class="colored_links">Iteration 2: HiFi Prototyping</a></li>
-                        <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M3_lofiWeb.html" class="colored_links">Iteration 3: LoFi Web App</a></li>
-                        <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M4_hifiWeb.html" class="colored_links">Iteration 4: HiFi Web App</a></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <div class="level" >
-            <div class="level-item" id="bottom_navigation">
-                <button class="navigation_button end" onclick="window.location.href='design.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Design</p></button>
-                <button class="navigation_button end" onclick="window.location.href='evaluation.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Evaluation</p></button>
-            </div>
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+          <p><a href="https://www.nngroup.com/articles/ux-prototype-hi-lo-fidelity/">"UX Prototypes: Low Fidelity vs. High Fidelity" </a> by Kara Pernice, online article</p>
+          <p><a href="https://www.youtube.com/watch?v=d5_h1VuwD6g">"Rapid prototyping Google Glass - Tom Chi"</a> by TED-ed, video</p>
         </div>
+
+      </section>
+
+      <section>
+        <h1 class="title is-4">Prototyping Dimensions</h1>
+        <iframe class="video" src="https://www.youtube.com/embed/Bovo9-Z3iBc?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h1 class="title is-4">Overview Implementation tasks</h1>
+        <div class="level">
+          <div>
+            <img  src="../../img/orga-spiral_blank_implementation.svg">
+          </div>
+          <div id="orga_spiral">
+            <p>We will take a closer look at implementation for several tasks. Feel free to already discover more about the methods:</p>
+            <br/>
+            <ul>
+              <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M1_paper.html" class="colored_links">Iteration 1: Paper Prototyping</a></li>
+              <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M2_hifiPrototyping.html" class="colored_links">Iteration 2: HiFi Prototyping</a></li>
+              <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M3_lofiWeb.html" class="colored_links">Iteration 3: LoFi Web App</a></li>
+              <li class="bullets"><a  href="/exercises_2.0/pages/tasks/M4_hifiWeb.html" class="colored_links">Iteration 4: HiFi Web App</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="level" >
+        <div class="level-item" id="bottom_navigation">
+          <button class="navigation_button end" onclick="window.location.href='design.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Design</p></button>
+          <button class="navigation_button end" onclick="window.location.href='evaluation.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Evaluation</p></button>
+        </div>
+      </div>
     </div>
 
     <div class="column is-2" id="navigation">
-        <div class="level">
-            <div class="level-item">
-                <button class="navigation_button" onclick="window.location.href='design.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
-                <button class="navigation_button" onclick="window.location.href='evaluation.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
-            </div>
+      <div class="level">
+        <div class="level-item">
+          <button class="navigation_button" onclick="window.location.href='design.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+          <button class="navigation_button" onclick="window.location.href='evaluation.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
         </div>
-        <span id="next_page">Next: Evaluation</span>
+      </div>
+      <span id="next_page">Next: Evaluation</span>
 
 
-        <div class="theme-switch-wrapper">
-            <div id="theme"><i class='fas fa-sun'></i></div>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
+      <div class="theme-switch-wrapper">
+        <div id="theme"><i class='fas fa-sun'></i></div>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </div>
 
     <div class="column is-3">
     </div>
 
-    </div>
-    <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
+  </div>
+  <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
 </body>
 </html>
 
 <script>
-    includeHTML();
+includeHTML();
 </script>

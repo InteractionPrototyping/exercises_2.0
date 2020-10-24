@@ -22,40 +22,40 @@
 
 <body onload="checkmarks();">
 
-<div class="columns is-fullheight">
+  <div class="columns is-fullheight">
 
     <div class="column is-2 fill">
     </div>
 
     <div class="column is-2 is-sidebar-menu">
-        <div w3-include-html="/exercises_2.0/pages/shared/sidebar.html"></div>
+      <div w3-include-html="/exercises_2.0/pages/shared/sidebar.html"></div>
     </div>
 
     <div class="column is-5" id="content">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-        <section>
-          <div >
-            <img src="/exercises_2.0/img/404_V2.png">
-            <p class="centered_text">We're sorry, this page does not seem to exist!</p>
-            <p class="centered_text">You can continue browsing with the navigation menu on the left.</p>
-            <!-- <p class="centered_text">Or go back to the last page you visited.</p> -->
-          </div>
-        </section>
-        <div>
-            <button class="nav_button_404" onclick="history.back();">Go to previous page</button>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+      <section>
+        <div >
+          <img src="/exercises_2.0/img/404_V2.png">
+          <p class="centered_text">We're sorry, this page does not seem to exist!</p>
+          <p class="centered_text">You can continue browsing with the navigation menu on the left.</p>
+          <!-- <p class="centered_text">Or go back to the last page you visited.</p> -->
         </div>
+      </section>
+      <div>
+        <button class="nav_button_404" onclick="history.back();">Go to previous page</button>
+      </div>
 
     </div>
 
     <div class="column is-2" id="navigation">
 
-        <div class="theme-switch-wrapper">
-            <div id="theme"><i class='fas fa-sun'></i></div>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
+      <div class="theme-switch-wrapper">
+        <div id="theme"><i class='fas fa-sun'></i></div>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </div>
 
 
@@ -64,9 +64,9 @@
     </div>
 
   </div>
-<div class="container_footer" w3-include-html="/exercises_2.0/pages/shared/footer.html" id="footer"></div>
+  <div class="container_footer" w3-include-html="/exercises_2.0/pages/shared/footer.html" id="footer"></div>
 </body>
 </html>
 <script>
-    includeHTML();
+includeHTML();
 </script>

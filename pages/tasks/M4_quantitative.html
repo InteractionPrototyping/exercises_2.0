@@ -1,145 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../js/include.js"></script>
-    <script src="../../js/script.js"></script>
-    <script src="../../js/lunr.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IPP</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/svg" href="../../img/tum.svg">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../../js/lunr.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IPP</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg" href="../../img/tum.svg">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://kit.fontawesome.com/6c7ce36d58.js" crossorigin="anonymous"></script>
 </head>
 
 <body onload="checkmarks();">
 
-<div class="columns is-fullheight">
+  <div class="columns is-fullheight">
 
     <div class="column is-2 fill">
     </div>
 
     <div class="column is-2 is-sidebar-menu">
-        <div w3-include-html="../shared/sidebar.html"></div>
+      <div w3-include-html="../shared/sidebar.html"></div>
     </div>
 
     <div class="column is-5" id="content">
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
-        <section>
-            <h1 class="title">Evaluation: Quantitative Evaluation</h1>
-            <iframe class="video" src="https://www.youtube.com/embed/dZLJ-siuEHo?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
-        <section>
-            <h1 class="title is-4">Experimental requirements: Hypotheses, test cases and metrics</h1>
-            <div>
-                <p>Read chapter six ("Usability Testing") in Nielsen's Usability Engineering (1993). Prepare requirements for a <strong>quantitative and summative evaluation.</strong></p>
-            </div>
-
-        </section>
-        <section>
-
-            <h1 class="title is-4">Hypotheses</h1>
-            <div>
-                <p>State goals and derive hypotheses that you want to test (e.g. "completing task x with the prototype is faster than with off-the-shelf software", "the prototype achieves at least a rating of x", "the performance for fulfilling the task will be x %" etc.). The hypotheses should be in line with your <b>functional and usability requirements</b>. A good introduction on creating theories and deriving hypotheses is given in Field (2009).</p><br />
-                <p>You must be able to explain, why you chose a certain hypothesis (including any predefined values). The easiest way to do so is by referencing relevant literature.</p>
-            </div>
-
-        </section>
-        <section>
-            <h1 class="title is-4">Test cases</h1>
-            <div>
-                <p>Derive the <b>test cases (tasks)</b>, from your use cases. Subjects will need to fulfill the test cases in order to reject/prove your hypotheses (some hints on test scenarios are given on usability.gov).</p>
-            </div>
-
-        </section>
-        <section>
-            <h1 class="title is-4">Metrics</h1>
-            <div>
-                <p>Nielsen's (2012) post on User Satisfaction vs. Performance Metrics and refer to "Performance Measurement" (Nielsen, 1993, chapter 6.7). Define objective measures (obtained by logging parameters) such as reaction time, time to perform a task, number of errors, number of interaction steps, etc. Additionally, define subjective measures. Design or use an existing short questionnaire that uses scales to analyze the product (a list of questionnaires can be found on <a href="usabilitynet.org">usabilitynet.org</a>, another list of usability and user experience surveys is available from <a href="unige.ch">unige.ch</a>, further questionnaires can be found on <a href="measuringu.com">measuringu.com</a>).</p>
-            </div>
-
-        </section>
-        <section>
-            <h1 class="title is-4">Experimental design: Plan and prepare a quantitative (summative) evaluation</h1>
-            <div>
-                <p>Please operationalize your hypothesis using the metrics. Define <b>quantitative criteria</b> for assessing your prototype subjectively and objectively.</p><br />
-                <ul>
-                    <li class="bullets"><p>Prepare the <b>experimental setup</b> for your summative evaluation.</p></li>
-                    <li class="bullets"><p>Design the <b>experimental procedure</b>.</p></li>
-                    <li class="bullets"><p>Setup the <b>data acquisition</b> (direct in-app logging, observation, record, ...).</p></li>
-                    <li class="bullets"><p><b>Test</b> the setup, procedure and data acquisition.</p></li>
-                </ul>
-            </div>
-
-        </section>
-        <section>
-
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
-                <p><a href="https://proquest.tech.safaribooksonline.de/9780125184069">Usability Engineering Chapter 6: Usability Testing</a> by Jakob Nielsen, book chapter</p>
-                <p><a href="https://www.mendeley.com/catalogue/a22f3b86-9c97-3bbc-ae48-049349fa3517/">Discovering statistics using IBM SPSS statistics</a> by Andy Field, book</p>
-                <p><a href="https://www.usability.gov/how-to-and-tools/methods/mobile-device-testing.html">Mobile Device Testing</a> by usability.gov, online article</p>
-                <p><a href="https://www.nngroup.com/articles/satisfaction-vs-performance-metrics/">User Satisfaction vs. Performance Metrics</a> by Jakob Nielsen, online article</p>
-            </div>
-
-            <div class="box_reading">
-                <div class="box_title"><i class="icons fa fa-bookmark"></i>Questionnaires</div>
-                <p><a href="http://edutechwiki.unige.ch/en/Usability_and_user_experience_surveys">Usability and user experience surveys</a> by edutech wiki, website</p>
-                <p><a href="https://measuringu.com/tag/Questionnaires/">Various UX questionnaires</a> by MeasuringU, website</p>
-                <p><a href="http://www.tbistafftraining.info/smartphones/documents/b5_during_the_trial_usability_scale_v1_09aug11.pdf">SUS</a> by Brooke (1996)</p>
-                <p><a href="https://dl.gi.de/bitstream/handle/20.500.12116/6525/Pr%C3%BCmper_1997.pdf?sequence=2&isAllowed=n">ISO 9241-10</a> by Prümper (1997)</p>
-                <p><a href="https://dl.gi.de/bitstream/handle/20.500.12116/7308/Hassenzahl_Burmester_Koller_2003.pdf?sequence=2">AttrakDiff 2</a> by Hassenzahl, Burmester & Koller (2003)</p>
-                <p><a href="https://www.researchgate.net/profile/Andreas_Hinderks/publication/311982961_Construction_of_a_Benchmark_for_the_User_Experience_Questionnaire_UEQ/links/586cccef08ae8fce4919f451.pdf">UEQ</a> by Schrepp, Hinderks & Thomaschewski (2017)</p>
-                <p><a href="https://course.ccs.neu.edu/is4300f16/ssl/garcia16.pdf">Emotrack</a> by Garcia & Hammond (2016)</p>
-                <p><a href="https://www.researchgate.net/profile/Marco_Van_hout2/publication/259937670_LEMtool_-_Measuring_Emotions_in_Visual_Interfaces/links/53e8bc530cf21cc29fdc8dbf/LEMtool-Measuring-Emotions-in-Visual-Interfaces.pdf">LEMtool</a> by Huisman et al. (2013)</p>
-            </div>
-
-            <div class="box_reading tasks_text">
-                <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task 19</div>
-                <p>Summarize <b>hypotheses, test cases and metrics</b> in a brief report in the folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p><br />
-                <p>Upload a photo of the <b>setup</b>, as well as a brief listing of the <b>quantitative criteria and the procedure</b> to a folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
-            </div>
-
-        </section>
-        <div class="level" >
-            <div class="level-item" id="bottom_navigation">
-                <button class="navigation_button end" onclick="window.location.href='M4_hifiWeb.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: HiFi Web App</p></button>
-                <button class="navigation_button end" onclick="window.location.href='M4_presentation.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Presentation M4</p></button>
-            </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+      <section>
+        <h1 class="title">Evaluation: Quantitative Evaluation</h1>
+        <iframe class="video" src="https://www.youtube.com/embed/dZLJ-siuEHo?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      <section>
+        <h1 class="title is-4">Experimental requirements: Hypotheses, test cases and metrics</h1>
+        <div>
+          <p>Read chapter six ("Usability Testing") in Nielsen's Usability Engineering (1993). Prepare requirements for a <strong>quantitative and summative evaluation.</strong></p>
         </div>
+
+      </section>
+      <section>
+
+        <h1 class="title is-4">Hypotheses</h1>
+        <div>
+          <p>State goals and derive hypotheses that you want to test (e.g. "completing task x with the prototype is faster than with off-the-shelf software", "the prototype achieves at least a rating of x", "the performance for fulfilling the task will be x %" etc.). The hypotheses should be in line with your <b>functional and usability requirements</b>. A good introduction on creating theories and deriving hypotheses is given in Field (2009).</p><br />
+          <p>You must be able to explain, why you chose a certain hypothesis (including any predefined values). The easiest way to do so is by referencing relevant literature.</p>
+        </div>
+
+      </section>
+      <section>
+        <h1 class="title is-4">Test cases</h1>
+        <div>
+          <p>Derive the <b>test cases (tasks)</b>, from your use cases. Subjects will need to fulfill the test cases in order to reject/prove your hypotheses (some hints on test scenarios are given on usability.gov).</p>
+        </div>
+
+      </section>
+      <section>
+        <h1 class="title is-4">Metrics</h1>
+        <div>
+          <p>Nielsen's (2012) post on User Satisfaction vs. Performance Metrics and refer to "Performance Measurement" (Nielsen, 1993, chapter 6.7). Define objective measures (obtained by logging parameters) such as reaction time, time to perform a task, number of errors, number of interaction steps, etc. Additionally, define subjective measures. Design or use an existing short questionnaire that uses scales to analyze the product (a list of questionnaires can be found on <a href="usabilitynet.org">usabilitynet.org</a>, another list of usability and user experience surveys is available from <a href="unige.ch">unige.ch</a>, further questionnaires can be found on <a href="measuringu.com">measuringu.com</a>).</p>
+        </div>
+
+      </section>
+      <section>
+        <h1 class="title is-4">Experimental design: Plan and prepare a quantitative (summative) evaluation</h1>
+        <div>
+          <p>Please operationalize your hypothesis using the metrics. Define <b>quantitative criteria</b> for assessing your prototype subjectively and objectively.</p><br />
+          <ul>
+            <li class="bullets"><p>Prepare the <b>experimental setup</b> for your summative evaluation.</p></li>
+            <li class="bullets"><p>Design the <b>experimental procedure</b>.</p></li>
+            <li class="bullets"><p>Setup the <b>data acquisition</b> (direct in-app logging, observation, record, ...).</p></li>
+            <li class="bullets"><p><b>Test</b> the setup, procedure and data acquisition.</p></li>
+          </ul>
+        </div>
+
+      </section>
+      <section>
+
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+          <p><a href="https://proquest.tech.safaribooksonline.de/9780125184069">Usability Engineering Chapter 6: Usability Testing</a> by Jakob Nielsen, book chapter</p>
+          <p><a href="https://www.mendeley.com/catalogue/a22f3b86-9c97-3bbc-ae48-049349fa3517/">Discovering statistics using IBM SPSS statistics</a> by Andy Field, book</p>
+          <p><a href="https://www.usability.gov/how-to-and-tools/methods/mobile-device-testing.html">Mobile Device Testing</a> by usability.gov, online article</p>
+          <p><a href="https://www.nngroup.com/articles/satisfaction-vs-performance-metrics/">User Satisfaction vs. Performance Metrics</a> by Jakob Nielsen, online article</p>
+        </div>
+
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Questionnaires</div>
+          <p><a href="http://edutechwiki.unige.ch/en/Usability_and_user_experience_surveys">Usability and user experience surveys</a> by edutech wiki, website</p>
+          <p><a href="https://measuringu.com/tag/Questionnaires/">Various UX questionnaires</a> by MeasuringU, website</p>
+          <p><a href="http://www.tbistafftraining.info/smartphones/documents/b5_during_the_trial_usability_scale_v1_09aug11.pdf">SUS</a> by Brooke (1996)</p>
+          <p><a href="https://dl.gi.de/bitstream/handle/20.500.12116/6525/Pr%C3%BCmper_1997.pdf?sequence=2&isAllowed=n">ISO 9241-10</a> by Prümper (1997)</p>
+          <p><a href="https://dl.gi.de/bitstream/handle/20.500.12116/7308/Hassenzahl_Burmester_Koller_2003.pdf?sequence=2">AttrakDiff 2</a> by Hassenzahl, Burmester & Koller (2003)</p>
+          <p><a href="https://www.researchgate.net/profile/Andreas_Hinderks/publication/311982961_Construction_of_a_Benchmark_for_the_User_Experience_Questionnaire_UEQ/links/586cccef08ae8fce4919f451.pdf">UEQ</a> by Schrepp, Hinderks & Thomaschewski (2017)</p>
+          <p><a href="https://course.ccs.neu.edu/is4300f16/ssl/garcia16.pdf">Emotrack</a> by Garcia & Hammond (2016)</p>
+          <p><a href="https://www.researchgate.net/profile/Marco_Van_hout2/publication/259937670_LEMtool_-_Measuring_Emotions_in_Visual_Interfaces/links/53e8bc530cf21cc29fdc8dbf/LEMtool-Measuring-Emotions-in-Visual-Interfaces.pdf">LEMtool</a> by Huisman et al. (2013)</p>
+        </div>
+
+        <div class="box_reading tasks_text">
+          <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task 19</div>
+          <p>Summarize <b>hypotheses, test cases and metrics</b> in a brief report in the folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p><br />
+          <p>Upload a photo of the <b>setup</b>, as well as a brief listing of the <b>quantitative criteria and the procedure</b> to a folder <code>iteration-4/preparation</code> on the GitHub <code>master</code> branch.</p>
+        </div>
+
+      </section>
+      <div class="level" >
+        <div class="level-item" id="bottom_navigation">
+          <button class="navigation_button end" onclick="window.location.href='M4_hifiWeb.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: HiFi Web App</p></button>
+          <button class="navigation_button end" onclick="window.location.href='M4_presentation.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Presentation M4</p></button>
+        </div>
+      </div>
     </div>
 
     <div class="column is-2" id="navigation">
-        <div class="level">
-            <div class="level-item">
-                <button class="navigation_button" onclick="window.location.href='M4_hifiWeb.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
-                <button class="navigation_button" onclick="window.location.href='M4_presentation.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
-            </div>
+      <div class="level">
+        <div class="level-item">
+          <button class="navigation_button" onclick="window.location.href='M4_hifiWeb.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+          <button class="navigation_button" onclick="window.location.href='M4_presentation.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
         </div>
-        <span id="next_page">Next: Presentation M4</span>
+      </div>
+      <span id="next_page">Next: Presentation M4</span>
 
-        <div w3-include-html="../shared/tasklist4.html" id="tasks"></div>
-        <div class="theme-switch-wrapper">
-            <div id="theme"><i class='fas fa-sun'></i></div>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
+      <div w3-include-html="../shared/tasklist4.html" id="tasks"></div>
+      <div class="theme-switch-wrapper">
+        <div id="theme"><i class='fas fa-sun'></i></div>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
     </div>
 
     <div class="column is-3">
     </div>
 
-    </div>
-    <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
+  </div>
+  <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
 </body>
 </html>
 
 <script>
-    includeHTML();
+includeHTML();
 </script>
