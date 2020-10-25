@@ -200,6 +200,17 @@ columns {
   min-width:200px;
 }
 
+.script {
+  color:var(--text-color-secondary);
+  vertical-align: middle;
+}
+
+.script_panel {
+  background-color: #efefef;
+  padding:0 10px;
+}
+
+
 /***Navigation***/
 
 .menu-list li ul {
