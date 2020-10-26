@@ -252,6 +252,7 @@ columns {
   background-color: var(--bg-color);
   border:0.5px solid var(--border-color);
   padding:1em 2em;
+  color:var(--text-color-primary);
 }
 
 .navigation_button:hover, .nav_button_404:hover {
