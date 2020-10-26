@@ -666,6 +666,10 @@ input:checked + .slider:before {
   width:70%;
 }
 
+#search_page_field {
+  width: 100%!important;
+}
+
 /***Checkboxes***/
 input[type="checkbox"] { display: none; }
 
