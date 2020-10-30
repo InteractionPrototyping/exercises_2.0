@@ -7,6 +7,7 @@
   --bg-color-tasks:#f9fcf8;
   --bg-color-templates:#fcf7f7;
   --bg-color-important:#fcdecf;
+  --bg-color-script: #EFEFEF;
 
   --text-color-primary: #4a4a4a;
   --text-color-secondary: #7a7a7a;
@@ -28,6 +29,7 @@
   --bg-color-tasks:#7a916f;
   --bg-color-templates:#786e93;
   --bg-color-important:#aa826f;
+  --bg-color-script: #727272;
 
   --text-color-primary: #FFFFFF;
   --text-color-secondary: #d1d1d1;
@@ -206,7 +208,7 @@ columns {
 }
 
 .script_panel {
-  background-color: #efefef;
+  background-color: var(--bg-color-script);
   padding:0 10px;
 }
 
