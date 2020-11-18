@@ -28,14 +28,14 @@ function variables() {
   // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
   var el = document.getElementById('deadline_task8');
   if (el != null) {
-    document.getElementById("deadline_task8").innerHTML = "xx.xx.2020";
+    document.getElementById("deadline_task8").innerHTML = "01.12.2020";
   } else {
   }
 
   // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
   var el = document.getElementById('deadline_task9');
   if (el != null) {
-    document.getElementById("deadline_task9").innerHTML = "xx.xx.2020";
+    document.getElementById("deadline_task9").innerHTML = "04.12.2020";
   } else {
   }
 
