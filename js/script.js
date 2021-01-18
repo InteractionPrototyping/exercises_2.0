@@ -42,7 +42,7 @@ function variables() {
   // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
   var el = document.getElementById('deadline_task20');
   if (el != null) {
-    document.getElementById("deadline_task20").innerHTML = "x days (until xx.xx.21 at 23:59:59)";
+    document.getElementById("deadline_task20").innerHTML = "7 days (until 27.01.21 at 23:59:59)";
   } else {
   }
 
