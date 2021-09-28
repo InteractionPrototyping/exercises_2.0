@@ -21,7 +21,7 @@ function variables() {
   //In Set up: Introduction: "Send your GitHub user names and your group's chosen name to: name_person"
   var el = document.getElementById('name_person');
   if (el != null) {
-    document.getElementById("name_person").innerHTML = "Lorenz Prasch.";
+    document.getElementById("name_person").innerHTML = "Jonas Bender.";
   } else {
   }
 
