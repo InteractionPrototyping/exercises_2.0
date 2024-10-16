@@ -28,21 +28,21 @@ function variables() {
   // In: Iteration 2: 8 HiFi Prototyping Task 8 Deadline
   var el = document.getElementById('deadline_task8');
   if (el != null) {
-    document.getElementById("deadline_task8").innerHTML = "15.11.2021";
+    document.getElementById("deadline_task8").innerHTML = "13.11.2021";
   } else {
   }
 
   // In: Iteration 2: 9 HiFi Heuristic Evaluation Task 9 Deadline
   var el = document.getElementById('deadline_task9');
   if (el != null) {
-    document.getElementById("deadline_task9").innerHTML = "17.11.2021";
+    document.getElementById("deadline_task9").innerHTML = "15.11.2021";
   } else {
   }
 
   // In: Iteration 4: 20 Presentation M4 Deadline GitHub Freeze (with time between M4 presentation and Github Freeze)
   var el = document.getElementById('deadline_task20');
   if (el != null) {
-    document.getElementById("deadline_task20").innerHTML = "7 days (until 24.01.22 at 23:59:59)";
+    document.getElementById("deadline_task20").innerHTML = "7 days (until 22.01.22 at 23:59:59)";
   } else {
   }
 
