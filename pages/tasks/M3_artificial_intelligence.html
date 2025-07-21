@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IPP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/svg" href="../../img/tum.svg">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../js/include.js"></script>
+  <script src="../../js/script.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body onload="checkmarks();">
+  <div class="columns is-fullheight">
+    <div class="column is-2 fill"></div>
+
+    <div class="column is-2 is-sidebar-menu">
+      <div w3-include-html="../shared/sidebar.html"></div>
+    </div>
+
+    <div class="column is-5" id="content">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+
+      <h1 class="title">Analysis: Using AI in Software Development</h1>
+      <section>
+        <h1 class="title is-4">Guidelines</h1>
+
+        <div class="quote">"AI is a powerful tool—if used with purpose, clarity, and responsibility."</div>
+        <div>
+          <p>Integrating AI into the development process is no longer a trend—it's increasingly becoming the norm. From generating code snippets to testing and debugging assistance, AI tools can save time and inspire creativity. However, they require careful handling to ensure code quality and ethical standards.</p><br/>
+          <p>Popular tools include GitHub Copilot, ChatGPT, TabNine, and AI-enhanced IDEs like Replit or Cursor. These tools can assist with routine tasks, but should never replace your own understanding of the codebase.</p>
+        </div>
+        <div>
+          <p>Tips:</p>
+          <ul>
+            <li class="bullets">Use AI to support—not replace—your thinking.</li>
+            <li class="bullets">Verify and test all generated code manually.</li>
+            <li class="bullets">Don’t include blind copy-pastes—understand and adapt suggestions.</li>
+            <li class="bullets">Always credit AI use when relevant in documentation or commits.</li>
+          </ul>
+        </div>
+
+        <div class="box_reading">
+          <div class="box_title"><i class="icons fa fa-bookmark"></i>Further reading</div>
+          <p><a href="https://openai.com/blog/gpt-4">How developers use AI tools – OpenAI Blog</a></p>
+          <p><a href="https://docs.github.com/en/copilot">GitHub Copilot Documentation</a></p>
+          <p><a href="https://blog.tabnine.com/">TabNine Developer Blog</a></p>
+          <p><a href="https://arxiv.org/abs/2302.06590">Human-Centered Evaluation of AI Pair Programmers</a> – academic perspective</p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">How to Use AI Effectively</h1>
+        <div>
+          <p>To benefit from AI without falling into common pitfalls, you should integrate it consciously into your workflow. This means treating it like a junior assistant: helpful, but not infallible. Ask it to explain, not just generate.</p><br/>
+          <p>In team settings, clearly mark AI-generated code in comments or commits (e.g. `// generated with ChatGPT - reviewed on 2025-07-21`). During reviews or submissions, note where AI helped in solving tasks or generating designs, and always clean up unnecessary or verbose output.</p><br/>
+          <p>Remember: The quality of an AI tool's answer depends heavily on your prompt. Be specific, structured, and iterative.</p>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="title is-4">(Some) Strengths and pitfalls</h1>
+
+        <h1 class="title is-6">AI Tools</h1>
+        <img class="example_app" src="../../img/chatgpt_ai_code.png">
+        <p class="example_app_text">Example: ChatGPT-assisted app planning, 2025</p>
+        <ul class="advantages">
+          <i class="fas fa-plus"></i>
+          <li class="bullets">Accelerates routine tasks (e.g. API stubs, unit tests, documentation)</li>
+          <li class="bullets">Boosts creativity and alternative solutions</li>
+          <li class="bullets">Great for explaining complex concepts or unfamiliar frameworks</li>
+        </ul>
+        <ul class="disadvantages">
+          <i class="fas fa-minus"></i>
+          <li class="bullets">Can introduce subtle bugs or poor practices if used blindly</li>
+          <li class="bullets">May hallucinate or suggest insecure/obsolete patterns</li>
+          <li class="bullets">Overreliance can limit skill growth and debugging ability</li>
+        </ul>
+      </section>
+
+      <div class="box_reading templates_text">
+        <div class="box_title templates_title"><i class="icons fa fa-file"></i>Templates</div>
+        <p><a href="https://github.com/features/copilot">GitHub Copilot</a></p>
+        <p><a href="https://cursor.sh">Cursor (AI-Powered IDE)</a></p>
+        <p><a href="https://codeium.com/">Codeium</a></p>
+        <p><a href="https://openai.com/blog/chatgpt">ChatGPT</a></p>
+      </div>
+
+      <div class="box_reading tasks_text">
+        <div class="box_title tasks_title"><i class="icons fas fa-tasks"></i>Task 11</div>
+        <p>Document how and where you used AI-based tools in your development process. Provide a critical reflection on their benefits and risks in <code>iteration-3/analysis</code> in the GitHub <code>master</code> branch.</p>
+      </div>
+
+      <br/>
+      <div class="level">
+        <div class="level-item" id="bottom_navigation">
+          <button class="navigation_button end" onclick="window.location.href='M2_presentation.html';"><i class=" navigation_arrow fas fa-chevron-left"></i><p>Previous: Presentation M2</p></button>
+          <button class="navigation_button end" onclick="window.location.href='M3_style_prototype.html';"><i class="navigation_arrow fas fa-chevron-right"></i><p>Next: Style a prototype</p></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="column is-2" id="navigation">
+      <div class="level">
+        <div class="level-item">
+          <button class="navigation_button" onclick="window.location.href='M2_presentation.html';"><i class=" navigation_arrow fas fa-chevron-left"></i></button>
+          <button class="navigation_button" onclick="window.location.href='M3_style_prototype.html';"><i class="navigation_arrow fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <span id="next_page">Next: Style a prototype</span>
+
+      <div w3-include-html="../shared/tasklist3.html" id="tasks"></div>
+      <div class="theme-switch-wrapper">
+        <div id="theme"><i class='fas fa-sun'></i></div>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+    </div>
+
+    <div class="column is-3"></div>
+  </div>
+
+  <div class="container_footer" w3-include-html="../shared/footer.html" id="footer"></div>
+</body>
+</html>
+<script>
+includeHTML();
+</script>
